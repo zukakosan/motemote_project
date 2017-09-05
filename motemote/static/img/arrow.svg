@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1795 -660 59 85">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iPhone_6_7_16);
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-iPhone_6_7_16">
+      <rect x="-1795" y="-660" width="59" height="85"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_6_7_16" data-name="iPhone 6/7 – 16" class="cls-1">
+    <g id="グループ化_137" data-name="グループ化 137" transform="translate(-2406 -1293)">
+      <path id="パス_84" data-name="パス 84" class="cls-2" d="M261.6-1301.851v43.354" transform="translate(379.369 1955.365)"/>
+      <line id="線_8" data-name="線 8" class="cls-2" x2="22.274" transform="translate(625 681.071) rotate(45)"/>
+      <line id="線_9" data-name="線 9" class="cls-2" x1="17" y2="17.429" transform="translate(639.5 681.071)"/>
+      <g id="長方形_68" data-name="長方形 68" class="cls-2" transform="translate(611 633)">
+        <rect class="cls-3" width="59" height="85" rx="29.5"/>
+        <rect class="cls-4" x="2.5" y="2.5" width="54" height="80" rx="27"/>
+      </g>
+    </g>
+  </g>
+</svg>

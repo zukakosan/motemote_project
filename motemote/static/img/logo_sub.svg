@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1008 -2142 142 40">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-アートボード_4);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 10px;
+        font-family: 04KanjyukuGothic;
+        letter-spacing: 0.3em;
+      }
+
+      .cls-3 {
+        font-size: 22px;
+        font-family: Futura-Medium, Futura;
+        font-weight: 500;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 1.3px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-アートボード_4">
+      <rect x="1008" y="-2142" width="142" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_4" data-name="アートボード – 4" class="cls-1">
+    <g id="グループ化_142" data-name="グループ化 142" transform="translate(989 -2162)">
+      <text id="モテ診断AI" class="cls-2" transform="translate(66.935 31)"><tspan x="0" y="0">モテ診断AI</tspan></text>
+      <text id="WANT_U" data-name="WANT U" class="cls-3" transform="translate(66.967 52.263)"><tspan x="0" y="0">WANT U</tspan></text>
+      <g id="楕円形_31" data-name="楕円形 31" class="cls-4" transform="translate(28.985 33.726)">
+        <ellipse class="cls-5" cx="10.37" cy="10.37" rx="10.37" ry="10.37"/>
+        <ellipse class="cls-6" cx="10.37" cy="10.37" rx="9.72" ry="9.72"/>
+      </g>
+      <g id="楕円形_32" data-name="楕円形 32" class="cls-4" transform="translate(44.524 28.39) rotate(90)">
+        <ellipse class="cls-5" cx="10.37" cy="10.37" rx="10.37" ry="10.37"/>
+        <ellipse class="cls-6" cx="10.37" cy="10.37" rx="9.72" ry="9.72"/>
+      </g>
+      <g id="楕円形_29" data-name="楕円形 29" class="cls-4" transform="translate(28.985 23.324)">
+        <ellipse class="cls-5" cx="10.37" cy="10.37" rx="10.37" ry="10.37"/>
+        <ellipse class="cls-6" cx="10.37" cy="10.37" rx="9.72" ry="9.72"/>
+      </g>
+      <g id="楕円形_30" data-name="楕円形 30" class="cls-4" transform="translate(54.926 28.39) rotate(90)">
+        <ellipse class="cls-5" cx="10.37" cy="10.37" rx="10.37" ry="10.37"/>
+        <ellipse class="cls-6" cx="10.37" cy="10.37" rx="9.72" ry="9.72"/>
+      </g>
+      <g id="楕円形_28" data-name="楕円形 28" class="cls-4" transform="translate(22.564 22.037)">
+        <ellipse class="cls-5" cx="16.791" cy="16.791" rx="16.791" ry="16.791"/>
+        <ellipse class="cls-6" cx="16.791" cy="16.791" rx="16.141" ry="16.141"/>
+      </g>
+    </g>
+  </g>
+</svg>

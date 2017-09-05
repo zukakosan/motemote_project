@@ -1,0 +1,260 @@
+@charset "utf-8";
+@media screen and (max-width: 1120px) {
+  label {
+    font-size: 120%;
+    width: 31%;
+  }
+}
+@media screen and (max-width: 1110px) {
+  #pannav {
+    width: 66%;
+  }
+  #pannav li {
+    width: 25%;
+  }
+  #pannav li:nth-child(2) {
+    left: 27%;
+  }
+  #pannav li:nth-child(3) {
+    left: 54%;
+  }
+}
+@media screen and (max-width: 955px) {
+  #iphone {
+    display: none;
+  }
+  #top_sec02_box ul {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 667px) {
+
+  #header_box {
+    padding: 7% 2% 2%;
+  }
+  #mainv {
+    background: rgb(30,87,153,0.8), url(../img/mainv.png) no-repeat bottom;
+    background: -moz-linear-gradient(left, rgba(30,87,153,0.8) 0%, rgba(41,137,216,0.8) 0%, rgba(70,112,220,0.8) 0%, rgba(135,80,225,0.8) 100%), url(../img/mainv.png) no-repeat bottom;
+    background: -webkit-linear-gradient(left, rgba(30,87,153,0.8) 0%,rgba(41,137,216,0.8) 0%,rgba(70,112,220,0.8) 0%,rgba(135,80,225,0.8) 100%) , url(../img/mainv.png) no-repeat bottom;
+    background: linear-gradient(to right, rgba(30,87,153,0.8) 0%,rgba(41,137,216,0.8) 0%,rgba(70,112,220,0.8) 0%,rgba(135,80,225,0.8) 100%), url(../img/mainv.png) no-repeat bottom;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#8750e1',GradientType=1 );
+    padding: 85% 0;
+    background-size: cover;
+  }
+  #mainv_txt {
+    top: 35%;
+  }
+  #mainv_txt img {
+    width: 80%;
+  }
+  #mainv_txt p {
+    font-size: 110%;
+  }
+  #mainv_txt h1 {
+    margin-bottom: 10%;
+  }
+  #move_genre {
+    font-size: 150%;
+  }
+  #top_sec01 {
+    font-size: 120%;
+    padding: 10% 0;
+  }
+  #top_sec01 h2,
+  #maintxt h2 {
+    font-size: 130%;
+  }
+  #iphone {
+    display: none;
+  }
+  #top_sec02_box {
+    display: block;
+  }
+  #top_sec02_box ul {
+    margin-top: 10%;
+    width: 100%;
+  }
+  #top_sec03 {
+    display: block;
+    padding: 10% 0 30%;
+  }
+  article {
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  footer img {
+    width: 30%;
+  }
+  small {
+    font-weight: 100;
+  }
+
+  #header_box h1 img {
+    margin-bottom: 10%;
+    width: 40%;
+  }
+  .drawer-hamburger {
+    top: 0;
+  }
+  .drawer-hamburger-icon {
+    height: 3px;
+    margin-top: 6px;
+    width: 65%;
+  }
+  #pannav {
+    background: #eee;
+    width: 100%;
+  }
+  #pannav li {
+    background: none;
+    font-size: 85%;
+    padding: 0;
+    position: static;
+    text-align: center;
+    width: 23%;
+  }
+  #choice {
+    display: block;
+    width: 80%;
+  }
+  #choice section {
+    box-sizing: border-box;
+    margin-bottom: 10%;
+    padding: 10%;
+    width: 100%;
+  }
+  .nda_logo {
+    margin-bottom: 5%;
+  }
+  .nda_logo img {
+    width: 30%;
+  }
+  #choice section h2,
+  .content_txt h2 {
+    font-size: 160%;
+  }
+  .txt_deco {
+    font-size: 100%;
+    left: -5%;
+    top: 20%;
+    width: 32%;
+  }
+  .content_box {
+    padding: 10% 0;
+  }
+  .content_txt p {
+    font-size: 120%;
+    margin: 0;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  .content_txt img {
+    margin-right: 0;
+  }
+  .txt_li > ul {
+    margin-left: 0;
+  }
+  .txt_li > ul li {
+    text-align: center;
+  }
+  .txt_li {
+    display: block;
+    width: 100%;
+  }
+  .content_txt img {
+    width: 15%;
+  }
+  .txt_li dl {
+    width: 100%;
+  }
+  .txt_li dt {
+    display: block;
+    text-align: center;
+  }
+  .txt_li dd li {
+    font-size: 100%;
+  }
+  .content_txt li p,
+  .txt_li dt {
+    font-size: 110%;
+  }
+  .en_box {
+    height: 20px;
+  }
+  .en_box .num {
+    top: -20%;
+  }
+  .content02 .content_txt img,
+  .content03 .content_txt img,
+  .content04 .content_txt img {
+    margin-bottom: 5%;
+    width: 16.5%;
+  }
+  .content02 .content_txt li p,
+  .content04 .content_txt li p {
+    text-align: center;
+  }
+  .content02 .content_txt li,
+  .content03 .content_txt li,
+  .content04 .content_txt li {
+    margin-bottom: 10%;
+  }
+  .content03 .content_box,
+  .content04 .content_box,
+  .content05 .content_box,
+  .content03_2 .content_box {
+    padding: 10% 0;
+  }
+  form {
+    padding-right: 0;
+    text-align: left;
+  }
+  input {
+    font-size: 13px;
+    width: 73%;
+  }
+  label {
+    font-size: 70%;
+    width: 20%;
+  }
+  .form_link {
+    display: block;
+    margin: 20% 0 40%;
+    width: 100%;
+  }
+  .form_link a {
+    font-size: 115%;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  #maintxt p {
+    font-size: 120%;
+    width: 100%;
+  }
+  #maintxt h2 {
+    font-weight: 200;
+  }
+  #maintxt .back_home {
+    width: 100%;
+  }
+
+  .drawer-nav {
+    width: 11.25rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

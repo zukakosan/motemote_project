@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>モテモテ!!診断</title>
+</head>
+<body>
+    <h1>モテモテ診断</h1>
+
+    <h3>{{ ratio }}</h3>
+    <h3>{{ score }}</h3>
+
+    <form action="{% url 'coluclate_mote:index' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="screen_name">
+        <button type="submit">診断</button>
+    </form>
+</body>
+</html> -->
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200,  user-scalable=yes, target-densitydpi=device-dpi">
+  <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>モテモテ！診断</title>
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/drawer.min.css' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/sp.css' %}">
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="{% static 'js/iscroll.js' %}"></script>
+  <script src="{% static 'js/drawer.min.js' %}"></script>
+  <script src="{% static 'js/common.js' %}"></script>
+</head>
+<body>
+  <div id="road" style="display:none;">
+  </div>
+
+
+  <header id="top_header">
+    <div id="header_box" class="header_box drawer drawer--left">
+      <h1>
+        <div class="ai">
+          <a href="#">
+            <img src="{% static 'img/logo.svg' %}" alt="" class="logo">
+          </a>
+        </div>
+        <img src="{% static 'img/sitettl.svg' %}" alt="sitettl">
+      </h1>
+      <div id="move_genre"><a href="#top_form"></a></div>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="drawer-hamburger-icon"></span>
+        <span class="drawer-hamburger-icon"></span>
+        <span class="drawer-hamburger-icon"></span>
+       </button>
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li><a href="#">モテ診断AIとは</a></li>
+          <li><a href="#">ディップについて</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <h2>モテ診断AIって？</h2>
+      <p>AI WANT U (アイウォンチュー)では、自然言語処理AIがTwitterアカウントを解析して、どのくらい異性フォロワーからモテているかを診断します。</p>
+    </section>
+    <section id="use">
+      <ul>
+        <li>
+          <div class="num">1</div>
+          <img src="{% static 'img/useIcon01.svg' %}" alt="">
+          <h2>ツイッター<br>アカウント名を入力</h2>
+        </li>
+        <li>
+          <div class="num">2</div>
+          <img src="{% static 'img/useIcon02.svg' %}" alt="">
+          <h2>AIがアカウント解析</h2>
+        </li>
+        <li>
+          <div class="num">3</div>
+          <img src="{% static 'img/useIcon03.svg' %}" alt="">
+          <h2>友達の診断も<br>してみましょう</h2>
+        </li>
+      </ul>
+    </section>
+    <form action="{% url 'coluclate_mote:result' %}" method="post" id="top_form">
+      {% csrf_token %}
+      <input type="text" name="screen_name" placeholder="ツイッターアカウント名" class="tw_name">
+      <!-- <button type="submit" class="diagnosis"><a href="road.html">診断</a></button> -->
+      <button type="submit" class="diagnosis">診断</button>
+    </form>
+    </form>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#">モテ診断AIとは</a></li>
+      <li><a href="#">ディップについて</a></li>
+      <li><a href="#">採用情報</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+    <small>Copyright © 2017 AI WANT U All Rights Reserved.</small>
+  </footer>
+</body>
+
+
+
+
+
+</html>
