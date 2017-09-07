@@ -8,4 +8,4 @@ python manage.py runserver
 を実行
 
 ### member 
-satotatsu machan zukako nabetaro tamutamu
+`satotatsu matchan zukako nabetaro tamutamu`
