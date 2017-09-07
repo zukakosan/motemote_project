@@ -1,5 +1,4 @@
-## dip株式会社 twitter分析チームによる　モテ診断プログラムです.
-### TAMU ISHI SATO WATA MATSU
+## dip株式会社
 
 ## 実行方法
 terminalで`/motemote` に移動して
@@ -7,3 +6,6 @@ terminalで`/motemote` に移動して
 python manage.py runserver
 ```
 を実行
+
+### member 
+satotatsu machan zukako nabetaro tamutmau
