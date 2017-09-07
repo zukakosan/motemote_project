@@ -146,6 +146,10 @@ def calc_mote(screen_name):
         "include_user_entities": True,
     }
     req = twitter_api.get_instance("followers/list.json", params=params)
+    print(dir(req))
+    print(req.status_code)
+    if req.status_code==404:
+        return None
     calculater = RateCalculator()
     n_male, n_female = calculater.calc(req.text)
 
