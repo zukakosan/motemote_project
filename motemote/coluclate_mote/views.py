@@ -21,7 +21,7 @@ def call_mote_api(request):
     import json
 
     if request.method == 'POST':
-        params = json.loads(request.body.decode('utf-8'))
+        params = json.loads(request.body)
         screen_name = params['screen_name']
         result = mote.calc_mote(screen_name)
 
@@ -32,3 +32,6 @@ def call_mote_api(request):
         return HttpResponse(response, content_type='application/json')
     else:
         raise Http404
+
+def how(request):
+    return render(request, 'coluclate_mote/how.html')

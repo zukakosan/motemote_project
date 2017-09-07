@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,20 +7,19 @@
   <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>モテモテ！診断</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/drawer.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/sp.css">
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/drawer.min.css' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/sp.css' %}">
   <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-  <script src="js/iscroll.js"></script>
-  <script src="js/drawer.min.js"></script>
-  <script src="js/common.js"></script>
-
+  <script src="{% static 'js/iscroll.js' %}"></script>
+  <script src="{% static 'js/drawer.min.js' %}"></script>
+  <script src="{% static 'js/common.js' %}"></script>
 </head>
 <body>
 <header id="sub_header">
   <div id="header_box" class="header_box drawer drawer--left">
-    <h1><a href="#"><img src="img/logo_sub.svg" alt=""></a></h1>
+    <h1><a href="#"><img src="{% static 'img/logo_sub.svg' %}" alt=""></a></h1>
     <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="drawer-hamburger-icon"></span>
       <span class="drawer-hamburger-icon"></span>
@@ -40,7 +40,7 @@
     <div class="pannav">
       <ul>
         <li>
-            <a itemprop="url" href="index.html" title=""><span itemprop="title">TOP</span></a>&#62;
+            <a itemprop="url" href="index" title=""><span itemprop="title">TOP</span></a>&#62;
         </li>
         <li>
             <a itemprop="url" href="road.html" title=""><span itemprop="title">診断結果</span></a>&#62;
@@ -54,9 +54,9 @@
     <h2 class="how02">裏側を詳しく知りたい方はコチラで！</h2>
     <p class="how_txt">現在ディップ株式会社では、エンジニアを募集しています。実際にこのサービスの裏側を作っているエンジニアと話して見たい方や、アルゴリズムの詳細などを知りたい方は、一人でオフィスまではらってください!!</p>
     <div id="links">
-      <a href="https://www.wantedly.com/projects/102664" class="tweet">一緒に作る</a>
+      <a href="https://www.wantedly.com/projects/102664" class="tweet" target="_blank">一緒に作る</a>
       <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
-      <a href="index.html" class="how">他の人も診断する</a>
+      <a href="index" class="how">他の人も診断する</a>
     </div>
   </div>
 </main>

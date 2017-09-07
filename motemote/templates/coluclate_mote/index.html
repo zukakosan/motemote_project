@@ -68,8 +68,30 @@
   </header>
   <main>
     <section id="about">
-      <h2>モテ診断AIって？</h2>
-      <p>AI WANT U (アイウォンチュー)では、自然言語処理AIがTwitterアカウントを解析して、どのくらい異性フォロワーからモテているかを診断します。</p>
+      <h2>人工知能×SNS×恋愛</h2>
+      <p>近年、LINEやTwitterなどのSNSが普及しています。
+        <br>
+        若者のSNS利用者は約8割。
+        <br>
+        <br>
+        さらに、恋愛の仕方も変化しています。
+        <br>
+        気づいたら異性の友人を好きになっていたり、
+        <br>
+        一目惚れしたりだけではなく、SNSから始まる恋もあるのでは…。
+        <br>
+        <br>
+        いま手元にあるSNSに、効率的なマッチングをしてくれる人工知能をプラスしたら
+        <br>
+        運命の相手を見つけ出す恋の架け橋ができるのではないでしょうか。
+        <br>
+        <br>
+        まずはモテ診断AI「アイウォンチュー」で
+        <br>
+        Twitter上でのあなた自身のモテ度を検証してみましょう。
+        <br>
+        そして気になる友人、さらには芸能人のモテ度と比較してみしょう。
+      </p>
     </section>
     <section id="use">
       <ul>
@@ -86,13 +108,13 @@
         <li>
           <div class="num">3</div>
           <img src="{% static 'img/useIcon03.svg' %}" alt="">
-          <h2>友達や芸能人も診断<br>して拡散しよう</h2>
+          <h2>友達の診断も<br>してみましょう</h2>
         </li>
       </ul>
     </section>
     <form action="{% url 'coluclate_mote:result' %}" method="post" id="top_form">
       {% csrf_token %}
-      <input type="text" name="screen_name" placeholder="ツイッターアカウント名" class="tw_name">
+      <input type="text" name="screen_name" placeholder="@以降のツイッターアカウント名" class="tw_name">
       <!-- <button type="submit" class="diagnosis"><a href="road.html">診断</a></button> -->
       <button type="submit" class="diagnosis">診断</button>
     </form>

@@ -1,5 +1,0 @@
-django==1.11.4
-numpy
-sklearn
-flask
-requests_oauthlib

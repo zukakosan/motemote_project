@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2105 -2004 507 164.37"><defs><style>.a{fill:#d3d3d3;opacity:0.393;}.b{clip-path:url(#c);}.c,.d,.e{fill:#fff;}.c{font-size:42px;font-family:04KanjyukuGothic;letter-spacing:0.3em;}.e{font-size:90px;font-family:Futura-Medium, Futura;font-weight:500;}.f{clip-path:url(#a);}</style><clipPath id="a"><rect class="a" width="49" height="71.8" transform="translate(63 68.7)"/></clipPath><clipPath id="c"><rect x="-2105" y="-2004" width="507" height="164.37"/></clipPath></defs><g id="b" class="b"><text class="c" transform="translate(-1988 -1967.37)"><tspan x="0" y="0">モテ診断AI</tspan></text><rect class="d" width="53.568" height="9.7" transform="translate(-1760.158 -1932.4)"/><g transform="translate(-2105 -2004)"><text class="e" transform="translate(108.029 136.465)"><tspan x="0" y="0" xml:space="preserve">W     </tspan></text><text class="e" transform="translate(10 140.508)"><tspan x="0" y="0" xml:space="preserve">A  </tspan></text><text class="e" transform="translate(194.972 139.497)"><tspan x="0" y="0" xml:space="preserve">A  </tspan></text><text class="e" transform="translate(266.765 139.497)"><tspan x="0" y="0">N</tspan></text><text class="e" transform="translate(353.718 139.497)"><tspan x="0" y="0">T</tspan></text><text class="e" transform="translate(430.565 138.486)"><tspan x="0" y="0">U</tspan></text><g class="f" transform="translate(3.834)"><path class="d" d="M-2162.017-373.5l34,76.611h-11.511l-33.181-76.611Z" transform="translate(2239.823 442.2)"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2050 -2433 518 158.37">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-アートボード_4);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 42px;
+        font-family: 04KanjyukuGothic;
+        letter-spacing: 0.3em;
+      }
+
+      .cls-3 {
+        font-size: 90px;
+        font-family: Futura-Medium, Futura;
+        font-weight: 500;
+      }
+    </style>
+    <clipPath id="clip-アートボード_4">
+      <rect x="-2050" y="-2433" width="518" height="158.37"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_4" data-name="アートボード – 4" class="cls-1">
+    <text id="モテ診断AI" class="cls-2" transform="translate(-1927 -2390.37)"><tspan x="0" y="0">モテ診断AI</tspan></text>
+    <g id="グループ化_146" data-name="グループ化 146" transform="translate(-2045 -2433)">
+      <text id="W_" data-name="W     " class="cls-3" transform="translate(117.029 141)"><tspan x="0" y="0" xml:space="preserve">W     </tspan></text>
+      <text id="a" class="cls-3" transform="translate(199.972 141)"><tspan x="0" y="0">a</tspan></text>
+      <text id="n" class="cls-3" transform="translate(253.765 141)"><tspan x="0" y="0">n</tspan></text>
+      <text id="t" class="cls-3" transform="translate(305.718 141)"><tspan x="0" y="0">t</tspan></text>
+      <text id="A_" data-name="A    " class="cls-3" transform="translate(8 141)"><tspan x="0" y="0" xml:space="preserve">A    </tspan></text>
+      <text id="i" class="cls-3" transform="translate(75 141)"><tspan x="0" y="0">i</tspan></text>
+      <text id="You" class="cls-3" transform="translate(350 141)"><tspan x="0" y="0">You</tspan></text>
+    </g>
+  </g>
+</svg>
