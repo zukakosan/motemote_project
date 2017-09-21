@@ -1,6 +1,7 @@
 #! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
+import os
 import math
 import json
 from api import twitter_api
@@ -15,11 +16,13 @@ COUNT = 100
 
 class RateCalculator():
     def __init__(self):
-        self.clf = joblib.load("/Users/satoutatsuya/data/motemote/api/dump/clf.pkl")
-        self.n_cv = joblib.load("/Users/satoutatsuya/data/motemote/api/dump/name_cv.pkl")
-        self.s_cv = joblib.load("/Users/satoutatsuya/data/motemote/api/dump/screen_cv.pkl")
-        self.d_cv = joblib.load("/Users/satoutatsuya/data/motemote/api/dump/desc_cv.pkl")
-        self.l_cv = joblib.load("/Users/satoutatsuya/data/motemote/api/dump/loc_cv.pkl")
+        api_dir_path = os.path.dirname(os.path.abspath(__file__))
+        dump_dir_path = api_dir_path + '/dump'
+        self.clf = joblib.load("{0}/clf.pkl".format(dump_dir_path))
+        self.n_cv = joblib.load("{0}/name_cv.pkl".format(dump_dir_path))
+        self.s_cv = joblib.load("{0}/screen_cv.pkl".format(dump_dir_path))
+        self.d_cv = joblib.load("{0}/desc_cv.pkl".format(dump_dir_path))
+        self.l_cv = joblib.load("{0}/loc_cv.pkl".format(dump_dir_path))
 
     def calc(self, response_text):
         followers = json.loads(response_text)
