@@ -160,7 +160,7 @@ def calc_mote(screen_name):
         "screen_name": screen_name,
         "include_entity": True,
     }
-    print(params)
+
     c_male = 0
     c_female = 0
     req = twitter_api.get_instance("users/lookup.json", params=params)
