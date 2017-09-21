@@ -55,7 +55,7 @@
   </section>
   <form action="{% url 'coluclate_mote:result' %}" method="post" id="top_form">
     {% csrf_token %}
-    <input type="text" name="screen_name" placeholder="@以降のツイッターアカウント名" class="tw_name">
+    <input type="text" name="screen_name" placeholder="ツイッターアカウント名" class="tw_name">
     <!-- <button type="submit" class="diagnosis"><a href="road.html">診断</a></button> -->
     <button type="submit" class="diagnosis">診断</button>
   </form>
