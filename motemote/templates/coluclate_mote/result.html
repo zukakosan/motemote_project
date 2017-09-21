@@ -1,79 +1,44 @@
+{% extends "layout/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=1200,  user-scalable=yes, target-densitydpi=device-dpi">
-  <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>モテモテ！診断</title>
-  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-  <link rel="stylesheet" href="{% static 'css/drawer.min.css' %}">
-  <link rel="stylesheet" href="{% static 'style.css' %}">
-  <link rel="stylesheet" href="{% static 'css/sp.css' %}">
-  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-  <script src="{% static 'js/iscroll.js' %}"></script>
-  <script src="{% static 'js/drawer.min.js' %}"></script>
-  <script src="{% static 'js/common.js' %}"></script>
-</head>
-<body>
-  <div id="road">
-    <div id="loader-bg">
-      <div id="loader">
-        <img src="{% static 'img/img-loading.gif' %}" width="80" height="80" alt="Now Loading..." />
-        <p>Now Loading...</p>
-      </div>
-    </div>
-    <div id="wrap">
-      <header id="sub_header">
-        <div id="header_box" class="header_box drawer drawer--left">
-          <h1><a href="#"><img src="{% static 'img/logo_sub.svg' %}" alt=""></a></h1>
-          <button type="button" class="drawer-toggle drawer-hamburger">
-            <span class="drawer-hamburger-icon"></span>
-            <span class="drawer-hamburger-icon"></span>
-            <span class="drawer-hamburger-icon"></span>
-           </button>
-          <nav class="drawer-nav">
-            <ul class="drawer-menu">
-              <li><a href="#">モテ診断AIとは</a></li>
-              <li><a href="#">ディップについて</a></li>
-              <li><a href="#">採用情報</a></li>
-              <li><a href="#">お問い合わせ</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <div id="sub_contents">
-          <div class="pannav">
-            <ul>
-              <li>
-                  <a itemprop="url" href="index" title=""><span itemprop="title">TOP</span></a>&#62;
-              </li>
-              <li><span itemprop="title" class="pnav_here">診断結果</span></li>
-            </ul>
-          </div>
-          <h1><span id='screen_name'>{{ screen_name }}</span>さんのモテ偏差値は...<span id='score'></span></h1>
-          <div id="links">
-            <a href="http://twitter.com/share?url=[シェアするURL]&text=世界初！モテ診断AI アイウォンチュー でモテ偏差値を計ろう！&via=[screen_name]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
-            <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
-            <a href="how" class="how">どうやって作ってるの？</a>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <ul>
-          <li><a href="#">モテ診断AIとは</a></li>
-          <li><a href="#">ディップについて</a></li>
-          <li><a href="#">採用情報</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
-        <small>Copyright © 2017 AI WANT U All Rights Reserved.</small>
-      </footer>
+
+{% block body %}
+<div id="road">
+  <div id="loader-bg">
+    <div id="loader">
+      <img src="{% static 'img/img-loading.gif' %}" width="80" height="80" alt="Now Loading..." />
+      <p>Now Loading...</p>
     </div>
   </div>
-</body>
+  <div id="wrap">
 
+    {% include "layout/header.html" %}
+
+    <main>
+      <div id="sub_contents">
+        <div class="pannav">
+          <ul>
+            <li>
+                <a itemprop="url" href="index" title=""><span itemprop="title">TOP</span></a>&#62;
+            </li>
+            <li><span itemprop="title" class="pnav_here">診断結果</span></li>
+          </ul>
+        </div>
+        <h1><span id='screen_name'>{{ screen_name }}</span>さんのモテ偏差値は...<span id='score'></span></h1>
+        <div id="links">
+          <a href="http://twitter.com/share?url=[シェアするURL]&text=世界初！モテ診断AI アイウォンチュー でモテ偏差値を計ろう！&via=[screen_name]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
+          <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
+          <a href="how" class="how">どうやって作ってるの？</a>
+        </div>
+      </div>
+    </main>
+
+    {% include 'layout/footer.html' %}
+
+  </div>
+</div>
+{% endblock %}
+
+{% block extrascript %}
 <script>
 $(function() {
   var h = $(window).height();
@@ -137,4 +102,4 @@ function stopload(){
   $('#loader').delay(600).fadeOut(300);
 }
 </script>
-</html>
+{% endblock %}

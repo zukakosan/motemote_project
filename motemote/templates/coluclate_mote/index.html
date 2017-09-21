@@ -1,138 +1,66 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>モテモテ!!診断</title>
-</head>
-<body>
-    <h1>モテモテ診断</h1>
-
-    <h3>{{ ratio }}</h3>
-    <h3>{{ score }}</h3>
-
-    <form action="{% url 'coluclate_mote:index' %}" method="post">
-        {% csrf_token %}
-        <input type="text" name="screen_name">
-        <button type="submit">診断</button>
-    </form>
-</body>
-</html> -->
-
+{% extends "layout/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=1200,  user-scalable=yes, target-densitydpi=device-dpi">
-  <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>モテモテ！診断</title>
-  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-  <link rel="stylesheet" href="{% static 'css/drawer.min.css' %}">
-  <link rel="stylesheet" href="{% static 'style.css' %}">
-  <link rel="stylesheet" href="{% static 'css/sp.css' %}">
-  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-  <script src="{% static 'js/iscroll.js' %}"></script>
-  <script src="{% static 'js/drawer.min.js' %}"></script>
-  <script src="{% static 'js/common.js' %}"></script>
-</head>
-<body>
-  <div id="road" style="display:none;">
-  </div>
 
+{% block body %}
 
-  <header id="top_header">
-    <div id="header_box" class="header_box drawer drawer--left">
-      <h1>
-        <div class="ai">
-          <a href="#">
-            <img src="{% static 'img/logo.svg' %}" alt="" class="logo">
-          </a>
-        </div>
-        <img src="{% static 'img/sitettl.svg' %}" alt="sitettl">
-      </h1>
-      <div id="move_genre"><a href="#top_form"></a></div>
-      <button type="button" class="drawer-toggle drawer-hamburger">
-        <span class="drawer-hamburger-icon"></span>
-        <span class="drawer-hamburger-icon"></span>
-        <span class="drawer-hamburger-icon"></span>
-       </button>
-      <nav class="drawer-nav">
-        <ul class="drawer-menu">
-          <li><a href="#">モテ診断AIとは</a></li>
-          <li><a href="#">ディップについて</a></li>
-          <li><a href="#">採用情報</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section id="about">
-      <h2>人工知能×SNS×恋愛</h2>
-      <p>近年、LINEやTwitterなどのSNSが普及しています。
-        <br>
-        若者のSNS利用者は約8割。
-        <br>
-        <br>
-        さらに、恋愛の仕方も変化しています。
-        <br>
-        気づいたら異性の友人を好きになっていたり、
-        <br>
-        一目惚れしたりだけではなく、SNSから始まる恋もあるのでは…。
-        <br>
-        <br>
-        いま手元にあるSNSに、効率的なマッチングをしてくれる人工知能をプラスしたら
-        <br>
-        運命の相手を見つけ出す恋の架け橋ができるのではないでしょうか。
-        <br>
-        <br>
-        まずはモテ診断AI「アイウォンチュー」で
-        <br>
-        Twitter上でのあなた自身のモテ度を検証してみましょう。
-        <br>
-        そして気になる友人、さらには芸能人のモテ度と比較してみしょう。
-      </p>
-    </section>
-    <section id="use">
-      <ul>
-        <li>
-          <div class="num">1</div>
-          <img src="{% static 'img/useIcon01.svg' %}" alt="">
-          <h2>ツイッター<br>アカウント名を入力</h2>
-        </li>
-        <li>
-          <div class="num">2</div>
-          <img src="{% static 'img/useIcon02.svg' %}" alt="">
-          <h2>AIがアカウント解析</h2>
-        </li>
-        <li>
-          <div class="num">3</div>
-          <img src="{% static 'img/useIcon03.svg' %}" alt="">
-          <h2>友達の診断も<br>してみましょう</h2>
-        </li>
-      </ul>
-    </section>
-    <form action="{% url 'coluclate_mote:result' %}" method="post" id="top_form">
-      {% csrf_token %}
-      <input type="text" name="screen_name" placeholder="@以降のツイッターアカウント名" class="tw_name">
-      <!-- <button type="submit" class="diagnosis"><a href="road.html">診断</a></button> -->
-      <button type="submit" class="diagnosis">診断</button>
-    </form>
-    </form>
-  </main>
-  <footer>
+<div id="road" style="display:none;"></div>
+
+{% include "layout/header.html" %}
+
+<main>
+  <section id="about">
+    <h2>人工知能×SNS×恋愛</h2>
+    <p>近年、LINEやTwitterなどのSNSが普及しています。
+      <br>
+      若者のSNS利用者は約8割。
+      <br>
+      <br>
+      さらに、恋愛の仕方も変化しています。
+      <br>
+      気づいたら異性の友人を好きになっていたり、
+      <br>
+      一目惚れしたりだけではなく、SNSから始まる恋もあるのでは…。
+      <br>
+      <br>
+      いま手元にあるSNSに、効率的なマッチングをしてくれる人工知能をプラスしたら
+      <br>
+      運命の相手を見つけ出す恋の架け橋ができるのではないでしょうか。
+      <br>
+      <br>
+      まずはモテ診断AI「アイウォンチュー」で
+      <br>
+      Twitter上でのあなた自身のモテ度を検証してみましょう。
+      <br>
+      そして気になる友人、さらには芸能人のモテ度と比較してみしょう。
+    </p>
+  </section>
+  <section id="use">
     <ul>
-      <li><a href="#">モテ診断AIとは</a></li>
-      <li><a href="#">ディップについて</a></li>
-      <li><a href="#">採用情報</a></li>
-      <li><a href="#">お問い合わせ</a></li>
+      <li>
+        <div class="num">1</div>
+        <img src="{% static 'img/useIcon01.svg' %}" alt="">
+        <h2>ツイッター<br>アカウント名を入力</h2>
+      </li>
+      <li>
+        <div class="num">2</div>
+        <img src="{% static 'img/useIcon02.svg' %}" alt="">
+        <h2>AIがアカウント解析</h2>
+      </li>
+      <li>
+        <div class="num">3</div>
+        <img src="{% static 'img/useIcon03.svg' %}" alt="">
+        <h2>友達の診断も<br>してみましょう</h2>
+      </li>
     </ul>
-    <small>Copyright © 2017 AI WANT U All Rights Reserved.</small>
-  </footer>
-</body>
+  </section>
+  <form action="{% url 'coluclate_mote:result' %}" method="post" id="top_form">
+    {% csrf_token %}
+    <input type="text" name="screen_name" placeholder="@以降のツイッターアカウント名" class="tw_name">
+    <!-- <button type="submit" class="diagnosis"><a href="road.html">診断</a></button> -->
+    <button type="submit" class="diagnosis">診断</button>
+  </form>
+</main>
 
+{% include 'layout/footer.html' %}
 
-
-
-
-</html>
+{% endblock %}
