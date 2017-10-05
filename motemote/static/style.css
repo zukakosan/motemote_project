@@ -209,12 +209,25 @@ a:visited {
 
 /* form */
 #top_form {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 5% 0;
   width: 70%;
+}
+.box01 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.errorlist li {
+  font-size: 15px;
+  margin: 7px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
 }
 input[type="text"]:focus {
   outline: 0;

@@ -24,7 +24,7 @@ def result(request):
         if not form.is_valid():
             for error in form.errors.values():
                 messages.error(request, error)
-            return redirect('coluclate_mote:index')
+            return redirect('/coluclate_mote/index#top_form')
 
         screen_name = form.data['screen_name'].replace('@','')
         content['screen_name'] = screen_name
