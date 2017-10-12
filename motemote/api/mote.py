@@ -167,11 +167,14 @@ def calc_mote(screen_name):
     user_profile = json.loads(req.text)
     if calculater.clf.predict(calculater.extract_feature(user_profile[0])) == [1]:
         rate = n_female / (n_male + n_female)
+        sex = 1
 
     else:
         rate = n_male / (n_male + n_female)
+        sex = 2
 
     return {
         "ratio": rate,
         "score": ((rate - MEAN) / math.sqrt(VAR)) * 0.1 + 0.5,
+        "sex": sex,
     }
