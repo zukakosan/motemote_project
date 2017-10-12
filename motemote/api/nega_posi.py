@@ -6,7 +6,7 @@ import json
 from api import twitter_api
 import numpy as np
 from sklearn.externals import joblib
-from motemote import settings
+from django.conf import settings
 
 class JudgeClass :
     #初期化
