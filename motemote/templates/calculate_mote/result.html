@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block body %}
-<div id="road">
+<div id="load">
   <div id="loader-bg">
     <div id="loader">
       <img src="{% static 'img/img-loading.gif' %}" width="80" height="80" alt="Now Loading..." />
@@ -51,7 +51,7 @@ $(function() {
 
       $.ajax({
           type: 'POST',
-          url: '/coluclate_mote/call_mote_api',
+          url: '/calculate_mote/call_mote_api',
           data: JSON.stringify({'screen_name': screen_name}),
           success: function(response) {
               $('#score').text(response['result']['score']);

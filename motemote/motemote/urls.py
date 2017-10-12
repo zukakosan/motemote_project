@@ -17,6 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^coluclate_mote/', include('coluclate_mote.urls', namespace= 'coluclate_mote')),
+    url(r'^calculate_mote/', include('calculate_mote.urls', namespace= 'calculate_mote')),
     url(r'^admin/', admin.site.urls),
 ]

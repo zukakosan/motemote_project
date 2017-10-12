@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from coluclate_mote import views
+from calculate_mote import views
 
 urlpatterns = [
     url(r'^index$', views.index, name='index'),
