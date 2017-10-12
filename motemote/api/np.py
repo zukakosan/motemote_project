@@ -34,7 +34,10 @@ def get_tweet(screen_name):
                 favolist.append(tweet["favorite_count"])
             if len(tweet_list)==100:
                 break
-        favo = sum(favolist)/len(favolist)
+        if len(tweet_list) == 0:
+            favo = 0
+        else :
+            favo = sum(favolist)/len(favolist)
         favo_ave = 1.76596070695
         favo_std = 5.3013228418991245
         favo_dev = calc_dev(favo,favo_ave,favo_std)
