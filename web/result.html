@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>モテ診断AI</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/sp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/pace-theme-loading-bar.tmpl.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/pace.min.js"></script>
+</head>
+<body>
+  <div id="loader-bg">
+    <div id="loader">
+      <p><span>Now Loading</span>診断中</p>
+      診断には1分ほどかかります。そのまましばらくお待ちください。
+    </div>
+  </div>
+  <div id="contents" class="drawer drawer--left">
+    <header>
+      <h1><a href="team.html"><img src="img/logo.png" alt="logo"></a></h1>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav id="gnav" class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a href="index.html">もう一度診断する</a></li>
+          <li><a href="http://twitter.com/share?url=[シェアするURL]&text=モテ診断AIでフォロワーからどのくらいモテているのか偏差値がわかったよ！キャラクターもシュールで面白い！&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">結果をツイート</a></li>
+          <li><a href="index.html#about" class="move-about">モテ診断AIとは</a></li>
+          <li><a href="index.html#how" class="move-how">モテ診断AIの使い方</a></li>
+          <li><a href="system.html">モテ診断AIのシステム</a></li>
+          <li><a href="team.html">制作チーム - DIPTECH -</a></li>
+          <li><a href="http://ainow.ai/" target="_blank">AIに関する記事 - AINOW -</a></li>
+          <li><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">Twitterアカウントの鍵を外す</a></li>
+        </ul>
+      </nav>
+      <a href="index.html#dx01" id="dx-link">診断する</a>
+    </header>
+    <main>
+      <section id="result">
+        <div id="illust">
+          <ul>
+            <!-- 男性イラスト -->
+            <li><img src="img/illust/men01.jpg" alt="男性イラスト"></li>
+            <!--
+            <li><img src="img/illust/men02.jpg" alt="男性イラスト"></li>
+            <li><img src="img/illust/men03.jpg" alt="男性イラスト"></li>
+            <li><img src="img/illust/men04.jpg" alt="男性イラスト"></li>
+            <li><img src="img/illust/men05.jpg" alt="男性イラスト"></li>
+            <li><img src="img/illust/men06.jpg" alt="男性イラスト"></li>
+            -->
+
+            <!-- ネカマイラスト -->
+            <!--
+            <li><img src="img/illust/nekama.jpg" alt="ネカマイラスト"></li>
+            -->
+
+            <!-- 女性イラスト -->
+            <!--
+            <li><img src="img/illust/women01.jpg" alt="女性イラスト"></li>
+            <li><img src="img/illust/women02.jpg" alt="女性イラスト"></li>
+            <li><img src="img/illust/women03.jpg" alt="女性イラスト"></li>
+            <li><img src="img/illust/women04.jpg" alt="女性イラスト"></li>
+            <li><img src="img/illust/women05.jpg" alt="女性イラスト"></li>
+            <li><img src="img/illust/women06.jpg" alt="女性イラスト"></li>
+            -->
+          </ul>
+          <p class="num">50</p>
+        </div>
+        <div id="illust-contents">
+          <div id="illust-name">
+            <ul>
+              <!-- ノーマルネーム 対応画像: men01.jpg  women01.jpg -->
+              <li class="normal-name">特に特徴のない君</li>
+
+              <!-- 男性ネーム -->
+              <!--
+              <li class="men-name01">ウェイ系大学生な君</li>
+              <li class="men-name02">勘違いホストな君</li>
+              <li class="men-name03">ひきこもりオタクな君</li>
+              <li class="men-name04">犯罪者な君</li>
+              <li class="men-name05">うるさいバンドマンな君</li>
+              -->
+
+              <!-- ネカマネーム -->
+              <!--
+              <li class="nekama-name">ネカマな君</li>
+              -->
+
+              <!-- 女性ネーム -->
+              <!--
+              <li class="women-name01">ギャルビッチな君</li>
+              <li class="women-name02">勘違いぶりっ子な君</li>
+              <li class="women-name03">メンヘラかまちょな君</li>
+              <li class="women-name04">悪霊な君</li>
+              <li class="women-name05">クレイマーな君</li>
+              -->
+            </ul>
+            <h2>モテ偏差値は<span class="num">50</span></h2>
+          </div>
+          <ul id="illust-txt">
+
+            <li class="normal-txt">君のモテ偏差値は<span>50</span>だよ。ツイート数は周りに迷惑をかけないようにやや控えめみたいだけど、ツイートは特に面白くないため存在感は薄いかも。誕生日でもみんなに忘れられがちな君は、女の子からリプがきたりお気に入りされたりすると意識しちゃうタイプかも！？</li>
+
+            <!-- 男性ネーム -->
+            <!--
+            <li class="men-txt01">君のモテ偏差値は<span>50</span>だよ。明るく活発な君は、ちょっとツイートがうるさい傾向にあるみたい。Twitter上ではパリピでウェイ系大学生みたいに思われているかも。だけど現実は意外と地味で自分が地味でない事、友達がいるアピールをしたい寂しがり屋さんだったりして...</li>
+
+            <li class="men-txt02">君のモテ偏差値は<span>50</span>だよ。更新頻度は少なめなのに、ツイートすればお気に入りがいっぱいくる君は自分を愛してやまないホストみたい。女子からも注目されているから、ついつい勘違いしちゃいがちかも。実はツイートする前にメモ帳で何度も書き直してたり！？
+            </li>
+
+            <li class="men-txt03">君のモテ偏差値は<span>50</span>だよ。暗くて短文なツイートを連発でいつもタイムラインにいるね。うすうす気づいてたと思うけど、君はメンヘラだよ。お気に入りが欲しくてツイートを繰り返してるけど、口数が多いオタクみたい。男の子のメンヘラは罪でしかない！いっぺんTwitterアプリ消してみる？</li>
+
+            <li class="men-txt04">君のモテ偏差値は<span>50</span>だよ。たまにつぶやいたと思えば暗いツイートだったり、一言ツイートだったり...。女の子はほぼ見てないよ君のツイート。だってタイムラインにいないんだもん。でも他人のツイートはしっかり見てる君は変態で犯罪に走りそう...。周りからはちょっとやばいやつ認定されてるかも！？</li>
+
+            <li class="men-txt05">君のモテ偏差値は<span>50</span>だよ。元気なツイートをたくさんしてるのに、お気に入りが少ないのはなんでだろう？ツイートが多くて、もしかしたら女の子に暑苦しいくてうるさい騒音男に思われてるかも。うるさい男は疲れそう...クールな男を目指してみて！</li>
+            -->
+
+            <!-- ネカマネーム -->
+            <!--
+            <li class="nekama-txt">残念！君は男の子？それとも女の子？あ！もしかしてネカマでしょ？ごめんね、性別がはっきりしないからモテ偏差値は出せないよ...。ネットだとみんな本性表すって言うけど、これが君の本当の性別かもしれないね！異性のふりしてる君は相手の反応を見るのに好奇心旺盛で変態かも！？</li>
+            -->
+
+            <!-- 女性ネーム -->
+            <!--
+            <li class="women-txt01">君のモテ偏差値は<span>50</span>だよ。ツイート数は周りに迷惑をかけないようにやや控えめみたいだけど、ツイートは特に面白くないため存在感は薄いかも。誕生日でもみんなに忘れられがちな君は、男の子からリプがきたりお気に入りされたりすると意識しちゃうタイプかも！？</li>
+
+            <li class="women-txt02">君のモテ偏差値は<span>50</span>だよ。明るく活発な君は、ちょっとツイートがうるさい傾向にあるみたい。Twitter上ではギャルでビッチっぽく思われているかも。だけど現実は意外と地味で自分が地味でない事、友達がいるアピールをしたい寂しがり屋さんだったりして...。</li>
+
+            <li class="women-txt03">君のモテ偏差値は<span>50</span>だよ。ここぞというイベントがあると可愛く盛れた自撮りをアップしてお気に入りを稼いでいるんじゃない？さえない男の子からモテて勘違いしちゃってる君、それみんな下心かもよ？ぶりっ子なところ少し抑えたら、周りからもっと好印象かも！？</li>
+
+            <li class="women-txt04">君のモテ偏差値は<span>50</span>だよ。暗くて短文なツイートを連発でいつもタイムラインにいるね。うすうす気づいてたと思うけど、君はメンヘラだよ。かまちょで寂しがり屋な君は男の子から面倒くさそうって思われてるかも。そんなに落ち込まずに元気出して！</li>
+
+            <li class="women-txt05">君のモテ偏差値は<span>50</span>だよ。タイムラインで友達が楽しそうにしているのを指くわえて見てるでしょ？ツイート数も少ないし、たまにツイートしたと思えば暗いツイートだったり、一言ツイートだったり...。存在感がまるでないよ！悪霊になってるよ！たまには周りに生存確認をさせてあげて？</li>
+
+            <li class="women-txt05">君のモテ偏差値は<span>50</span>だよ。ツイート数が多くて、いつもタイムラインにいるね。暇なのかな？周りから見たら、いつもタイムラインにいるうるさい人ってイメージかも。クレイマーみたい！知らず知らずにミュートされてたりフォロー外されてたりするかも！？</li>
+
+            -->
+
+          </ul>
+          <div id="button-wrap">
+            <button type="submit" class="button">
+              <a href="http://twitter.com/share?url=[シェアするURL]&text=モテ診断AIでフォロワーからどのくらいモテているのか偏差値がわかったよ！キャラクターもシュールで面白い！&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
+            </button>
+            <button type="submit" class="button"><a href="index.html">もう一度診断</a></button>
+          </div>
+        </div>
+      </section>
+      <section id="links">
+        <div class="link_box system">
+          <p>モテ診断AIがどのようなシステムでできているかをざっくりと紹介致します。
+            システムが気になる方は下リンクからおすすみ下さい。</p>
+          <a href="system.html">どうやって作ってるの？</a>
+        </div>
+        <div class="link_box member">
+          <p>私たちDIPTECHはdip株式会社 次世代事業準備室 インターン生によるチームから
+            生まれたソーシャルリクルーティングサービスです。</p>
+          <a href="team.html">制作チームを見る</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="index.html">もう一度診断する</a></li>
+        <li><a href="http://twitter.com/share?url=[シェアするURL]&text=モテ診断AIでフォロワーからどのくらいモテているのか偏差値がわかったよ！キャラクターもシュールで面白い！&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">結果をツイート</a></li>
+        <li><a href="index.html#about" class="move-about">モテ診断AIとは</a></li>
+        <li><a href="index.html#how" class="move-how">モテ診断AIの使い方</a></li>
+        <li><a href="system.html">モテ診断AIのシステム</a></li>
+        <li><a href="team.html">制作チーム - DIPTECH -</a></li>
+        <li><a href="http://ainow.ai/" target="_blank">AIに関する記事 - AINOW -</a></li>
+        <li><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">Twitterアカウントの鍵を外す</a></li>
+      </ul>
+      <a href="team.html" id="footer-logo"><img src="img/logo.png" alt="logo"></a>
+      <small>Copyright © 2017 motemote.ai All Rights Reserved.</small>
+    </footer>
+  </div>
+</body>
+</html>

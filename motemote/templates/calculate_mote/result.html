@@ -24,6 +24,10 @@
           </ul>
         </div>
         <h1><span id='screen_name'>{{ screen_name }}</span>さんのモテ偏差値は...<span id='score'></span></h1>
+        <ul class="illuestbox">
+          <li><img src="" id='img'></li>
+        </ul>
+        <h1><span id='pozi_score' ></span></h1>
         <div id="links">
           <a href="http://twitter.com/share?url=[シェアするURL]&text=世界初！モテ診断AI アイウォンチュー でモテ偏差値を計ろう！&via=[screen_name]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
           <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
@@ -55,6 +59,9 @@ $(function() {
           data: JSON.stringify({'screen_name': screen_name}),
           success: function(response) {
               $('#score').text(response['result']['score']);
+              $('#pozi_score').text(response['result']['dev_text']);
+              console.log(response['result']['img']);
+              $('#img').attr('src',response['result']['img']);
               stopload();
           },
           error: function(response) {

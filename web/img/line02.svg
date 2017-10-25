@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1287 -1047 375 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #404040;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-アートボード_2);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #242424;
+        stroke-width: 3px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="長方形_292" data-name="長方形 292" class="cls-1" width="375" height="30" transform="translate(-600 1520)"/>
+    </clipPath>
+    <clipPath id="clip-アートボード_2">
+      <rect x="-1287" y="-1047" width="375" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_2" data-name="アートボード – 2" class="cls-2">
+    <g id="マスクグループ_11" data-name="マスクグループ 11" class="cls-3" transform="translate(-687 -2567)">
+      <g id="グループ化_74" data-name="グループ化 74" transform="translate(-647.836 1491.5)">
+        <line id="線_207" data-name="線 207" class="cls-4" x1="67.429" y1="95.062" transform="translate(0)"/>
+        <line id="線_208" data-name="線 208" class="cls-4" x1="67.429" y1="95.062" transform="translate(12.643)"/>
+        <line id="線_209" data-name="線 209" class="cls-4" x1="67.429" y1="95.062" transform="translate(25.286)"/>
+        <line id="線_210" data-name="線 210" class="cls-4" x1="67.429" y1="95.062" transform="translate(37.929)"/>
+        <line id="線_211" data-name="線 211" class="cls-4" x1="67.429" y1="95.062" transform="translate(50.572)"/>
+        <line id="線_212" data-name="線 212" class="cls-4" x1="67.429" y1="95.062" transform="translate(63.215)"/>
+        <line id="線_213" data-name="線 213" class="cls-4" x1="67.429" y1="95.062" transform="translate(75.858)"/>
+        <line id="線_214" data-name="線 214" class="cls-4" x1="67.429" y1="95.062" transform="translate(88.501)"/>
+        <line id="線_215" data-name="線 215" class="cls-4" x1="67.429" y1="95.062" transform="translate(101.144)"/>
+        <line id="線_216" data-name="線 216" class="cls-4" x1="67.429" y1="95.062" transform="translate(113.787)"/>
+        <line id="線_217" data-name="線 217" class="cls-4" x1="67.429" y1="95.062" transform="translate(126.43)"/>
+        <line id="線_218" data-name="線 218" class="cls-4" x1="67.429" y1="95.062" transform="translate(139.073)"/>
+        <line id="線_219" data-name="線 219" class="cls-4" x1="67.429" y1="95.062" transform="translate(151.716)"/>
+        <line id="線_220" data-name="線 220" class="cls-4" x1="67.429" y1="95.062" transform="translate(164.359)"/>
+        <line id="線_221" data-name="線 221" class="cls-4" x1="67.429" y1="95.062" transform="translate(177.002)"/>
+        <line id="線_222" data-name="線 222" class="cls-4" x1="67.429" y1="95.062" transform="translate(189.645)"/>
+        <line id="線_223" data-name="線 223" class="cls-4" x1="67.429" y1="95.062" transform="translate(202.287)"/>
+        <line id="線_224" data-name="線 224" class="cls-4" x1="67.429" y1="95.062" transform="translate(214.93)"/>
+        <line id="線_225" data-name="線 225" class="cls-4" x1="67.429" y1="95.062" transform="translate(227.573)"/>
+        <line id="線_226" data-name="線 226" class="cls-4" x1="67.429" y1="95.062" transform="translate(240.216)"/>
+        <line id="線_227" data-name="線 227" class="cls-4" x1="67.429" y1="95.062" transform="translate(252.859)"/>
+        <line id="線_228" data-name="線 228" class="cls-4" x1="67.429" y1="95.062" transform="translate(265.502)"/>
+        <line id="線_229" data-name="線 229" class="cls-4" x1="67.429" y1="95.062" transform="translate(278.145)"/>
+        <line id="線_230" data-name="線 230" class="cls-4" x1="67.429" y1="95.062" transform="translate(290.788)"/>
+        <line id="線_231" data-name="線 231" class="cls-4" x1="67.429" y1="95.062" transform="translate(303.431)"/>
+        <line id="線_232" data-name="線 232" class="cls-4" x1="67.429" y1="95.062" transform="translate(316.074)"/>
+        <line id="線_233" data-name="線 233" class="cls-4" x1="67.429" y1="95.062" transform="translate(328.717)"/>
+        <line id="線_234" data-name="線 234" class="cls-4" x1="67.429" y1="95.062" transform="translate(341.36)"/>
+        <line id="線_235" data-name="線 235" class="cls-4" x1="67.429" y1="95.062" transform="translate(354.003)"/>
+        <line id="線_236" data-name="線 236" class="cls-4" x1="67.429" y1="95.062" transform="translate(366.646)"/>
+        <line id="線_237" data-name="線 237" class="cls-4" x1="67.429" y1="95.062" transform="translate(379.289)"/>
+        <line id="線_238" data-name="線 238" class="cls-4" x1="67.429" y1="95.062" transform="translate(391.932)"/>
+        <line id="線_239" data-name="線 239" class="cls-4" x1="67.429" y1="95.062" transform="translate(404.575)"/>
+      </g>
+    </g>
+  </g>
+</svg>
