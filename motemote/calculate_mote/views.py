@@ -4,14 +4,14 @@ from django.contrib import messages
 
 from api import mote
 from api import nega_posi,np
-from coluclate_mote.form import TwitterAcountForm
+from calculate_mote.form import TwitterAcountForm
 import json
 
 def index(request):
     content = {}
     form = TwitterAcountForm(auto_id=False)
     content['form'] = form
-    return render(request, 'coluclate_mote/index.html', content)
+    return render(request, 'calculate_mote/index.html', content)
 
 def result(request):
     content = {}
@@ -20,10 +20,10 @@ def result(request):
         if not form.is_valid():
             for error in form.errors.values():
                 messages.error(request, error)
-            return redirect('/coluclate_mote/index#top_form')
+            return redirect('/calculate_mote/index#top_form')
         screen_name = form.data['screen_name'].replace('@','')
         content['screen_name'] = screen_name
-        return render(request, 'coluclate_mote/result.html',content)
+        return render(request, 'calculate_mote/result.html',content)
     else:
         raise Http404
 
@@ -45,4 +45,4 @@ def call_mote_api(request):
         raise Http404
 
 def how(request):
-    return render(request, 'coluclate_mote/how.html')
+    return render(request, 'calculate_mote/how.html')
