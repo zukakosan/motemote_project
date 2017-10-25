@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8747 594 202 48">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-アートボード_1);
+      }
+
+      .cls-2 {
+        fill: #00cbff;
+        font-size: 63px;
+        font-family: DIN-Bold, DIN;
+        font-weight: 700;
+      }
+    </style>
+    <clipPath id="clip-アートボード_1">
+      <rect x="-8747" y="594" width="202" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_1" data-name="アートボード – 1" class="cls-1">
+    <text id="STEP_1" data-name="STEP 1" class="cls-2" transform="translate(-8746 640)"><tspan x="0" y="0">STEP 1</tspan></text>
+  </g>
+</svg>

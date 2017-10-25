@@ -1,0 +1,393 @@
+@charset "utf-8";
+@media screen and (max-width: 960px) {
+  p,
+  #illust-txt li {
+    font-size: 17px;
+  }
+  .fadein {
+    opacity: 1;
+    transform: none;
+  }
+  section h2 {
+    font-size: 35px;
+  }
+  section#how h3 {
+    left: 0;
+  }
+  section#links {
+    display: block;
+  }
+  .link_box {
+    width: auto;
+  }
+  .link_box p {
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .link_box a {
+    width: 40%;
+  }
+  section#dx01 p,
+  section#dx02 p {
+    width: 55%;
+  }
+  section#dx01 form,
+  section#dx02 form {
+    width: 40%;
+  }
+  section#how ul {
+    padding-left: 330px;
+  }
+  section#how h3 {
+    width: 200px;
+  }
+  section#how h3::before {
+    top: 15px;
+  }
+  #result {
+    padding: 5% 5% 10%;
+  }
+  #team section > p,
+  #system section > p {
+    width: 90%;
+  }
+  section#member > p {
+    width: 100%;
+  }
+  .work a {
+    width: 40%;
+  }
+  section#member ul li {
+    width: 46%;
+  }
+  section#member ul li h3 span {
+    font-size: 16px;
+  }
+  .img-center {
+    margin: 0;
+  }
+  .img-right {
+    margin-left: 8%;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 667px) {
+  p,
+  #illust-txt li,
+  .fadein .key-open {
+    font-size: 16px;
+    font-smoothing;
+    font-weight: bold;
+  }
+  header {
+    padding: 10px 0 5px;
+  }
+  header h1 a {
+    width: 65px;
+  }
+  #mainv {
+    padding: 0;
+  }
+  .drawer-hamburger {
+    left: -7px !important;
+    padding: 14px 49px 26px 17px !important;
+    top: 0 !important;
+  }
+  .drawer--left.drawer-open .drawer-hamburger {
+    background: #fff !important;
+    left: 13.8rem !important;
+    z-index: 2;
+  }
+  .drawer-nav {
+    width: 14.25rem !important;
+  }
+  .drawer-menu {
+    padding: 45px 20px 0 20px !important;
+  }
+  section {
+    margin-bottom: 60px;
+    padding: 0 5%;
+  }
+  section h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    letter-spacing: normal;
+  }
+  section#about {
+    padding: 60px 5% 70px;
+  }
+  section#how h2 {
+    background: #fff;
+  }
+  section#how::before {
+    height: 119%;
+    left: 8%;
+    top: -74px;
+  }
+  section#how h3 {
+    left: -1.7%;
+    width: 120px;
+  }
+  section#how h3::before {
+    height: 9px;
+    left: -5px;
+    top: 10px;
+    width: 9px;
+  }
+  section#how h3 img {
+    left: 15px;
+  }
+  section#how ul {
+    margin: 60px 0 0;
+    padding-left: 0;
+  }
+  section#how ul li {
+    margin-bottom: 55px;
+  }
+  section#how h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    width: 85%;
+  }
+  section#how p {
+    margin-left: 40px;
+    width: 88%;
+  }
+  section#dx01,
+  section#dx02 {
+    display: block;
+  }
+  section#dx01 p,
+  section#dx02 p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  section#dx01 p span,
+  section#dx02 p span {
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+  section#dx01 form,
+  section#dx02 form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .input-wrap {
+    margin-top: 25px;
+    width: 45%;
+  }
+  button.button {
+    width: 50%;
+  }
+  #knowmore button.button {
+    width: 100%;
+  }
+  section#dx02 {
+    margin-bottom: 0;
+    padding: 15% 5% 20%;
+  }
+  section#dx02,
+  section#recruit,
+  section#knowmore {
+    background: url(../img/line02.svg) #eee no-repeat;
+    background-position: bottom;
+  }
+  section#links {
+    margin-bottom: 40px;
+  }
+  .link_box {
+    padding: 15%;
+  }
+  .link_box p {
+    display: none;
+  }
+  .link_box a {
+    margin-top: 0;
+    width: auto;
+  }
+  footer {
+    margin-top: 0;
+  }
+  footer ul {
+    margin-bottom: 50px;
+  }
+  footer ul li {
+    margin: 0 2% 30px;
+  }
+  #footer-logo {
+    margin-bottom: 20px;
+    width: 25%;
+  }
+
+  #dx-link {
+    padding: 6px 8px;
+    top: 14px;
+    right: 10px;
+  }
+  .pace {
+    top: 230px !important;
+    width: 230px !important;
+  }
+  #loader p {
+    margin: 100px 0 100px;
+  }
+  #result {
+    background: url(../img/line02.svg) no-repeat;
+    background-position: bottom;
+    margin-bottom: 0;
+    padding: 5% 5% 15%;
+    display: block;
+  }
+  #illust ul li {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 90%;
+  }
+  #illust ul li img {
+    width: 350px;
+  }
+  #illust .num {
+    font-size: 23px;
+    left: 46%;
+    top: 40%;
+  }
+  #illust-contents {
+    width: auto;
+  }
+  #illust-name {
+    border-radius: 7px;
+    padding: 6px;
+  }
+  #illust-name ul li {
+    font-size: 20px;
+  }
+  #illust-name h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .bxslider-fade {
+    display: none;
+  }
+  .bxslider-fade-sp {
+    display: block;
+  }
+  .bxslider-fade-sp li {
+    height: 438px;
+    overflow: hidden;
+  }
+  .fadeImg .bx-wrapper {
+    margin: 0;
+  }
+  section#about-us,
+  section#concept,
+  section#make {
+    margin: 0;
+    padding: 20% 5%;
+  }
+  section#member {
+    margin: 0;
+    padding: 20% 5% 10%;
+  }
+  section#member ul {
+    margin: 50px 0 0;
+  }
+  section#member ul li {
+    float: none;
+    height: auto;
+    width: 100%;
+  }
+  .img-right {
+    margin-left: 0;
+  }
+  #team section > p {
+    width: 100%;
+  }
+  section#recruit,
+  section#knowmore {
+    margin: 0;
+    padding: 20% 5% 25%;
+  }
+  .work a {
+    font-size: 20px;
+    padding: 5px 0px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 429px) {
+  section#dx01 form,
+  section#dx02 form {
+    display: block;
+  }
+  button.button {
+    width: 100%;
+  }
+  .input-wrap {
+    width: 100%;
+  }
+  #illust ul li img {
+    width: 245px;
+  }
+  #illust .num {
+    font-size: 21px;
+    left: 45%;
+    top: 38%;
+  }
+  #button-wrap {
+    display: block;
+  }
+  #button-wrap button {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  footer ul {
+    display: block;
+  }
+  footer ul li {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 30px;
+    padding: 0 0 5px 5px;
+    position: relative;
+  }
+  footer ul li::after {
+    border-right: 3px solid #333;
+    border-top: 3px solid #333;
+    content: "";
+    height: 7px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 7px;
+  }
+  footer ul li a::after {
+    display: none;
+  }
+  footer ul li a:hover {
+    color: #c1c1c1 !important;
+    transition: color 0.35s ease !important;
+    -webkit-transition: color 0.35s ease !important;
+    -moz-transition: color 0.35s ease !important;
+  }
+}
+@media screen and (max-width: 377px) {
+  section#about {
+    background: url(../img/about-bg02.svg) no-repeat;
+    background-size: cover;
+    padding: 60px 5% 100px;
+  }
+  section#how::before {
+    top: -80px;
+  }
+  section#how p {
+    margin-left: 20px;
+  }
+}
