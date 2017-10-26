@@ -1,58 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3026 -2004 256 256.51">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-8301 -2148 887 499.14">
   <defs>
     <style>
       .cls-1 {
-        clip-path: url(#clip-iPhone_6_7_14);
-      }
-
-      .cls-2, .cls-3, .cls-5 {
-        fill: none;
-      }
-
-      .cls-2, .cls-3 {
-        stroke: #fff;
+        clip-path: url(#clip-iPhone_6_7_1);
       }
 
       .cls-2 {
-        stroke-width: 9px;
-      }
-
-      .cls-3 {
-        stroke-width: 8px;
-      }
-
-      .cls-4 {
-        stroke: none;
+        font-size: 137px;
+        font-family: DIN-Bold, DIN;
+        font-weight: 700;
+        letter-spacing: 0.4em;
       }
     </style>
-    <clipPath id="clip-iPhone_6_7_14">
-      <rect x="-3026" y="-2004" width="256" height="256.51"/>
+    <clipPath id="clip-iPhone_6_7_1">
+      <rect x="-8301" y="-2148" width="887" height="499.14"/>
     </clipPath>
   </defs>
-  <g id="iPhone_6_7_14" data-name="iPhone 6/7 – 14" class="cls-1">
-    <g id="グループ化_128" data-name="グループ化 128" transform="translate(-3026 -2003.758)">
-      <g id="グループ化_79" data-name="グループ化 79" transform="translate(0 0.507)">
-        <g id="楕円形_17" data-name="楕円形 17" class="cls-2" transform="translate(42.756 85.511)">
-          <circle class="cls-4" cx="85.243" cy="85.243" r="85.243"/>
-          <circle class="cls-5" cx="85.243" cy="85.243" r="80.743"/>
-        </g>
-        <g id="楕円形_21" data-name="楕円形 21" class="cls-2" transform="translate(170.487 41.645) rotate(90)">
-          <circle class="cls-4" cx="85.243" cy="85.243" r="85.243"/>
-          <circle class="cls-5" cx="85.243" cy="85.243" r="80.743"/>
-        </g>
-        <g id="楕円形_19" data-name="楕円形 19" class="cls-2" transform="translate(42.756 0)">
-          <circle class="cls-4" cx="85.243" cy="85.243" r="85.243"/>
-          <circle class="cls-5" cx="85.243" cy="85.243" r="80.743"/>
-        </g>
-        <g id="楕円形_20" data-name="楕円形 20" class="cls-2" transform="translate(255.998 41.645) rotate(90)">
-          <circle class="cls-4" cx="85.243" cy="85.243" r="85.243"/>
-          <circle class="cls-5" cx="85.243" cy="85.243" r="80.743"/>
-        </g>
-      </g>
-      <g id="楕円形_17-2" data-name="楕円形 17" class="cls-3" transform="translate(0 0)">
-        <circle class="cls-4" cx="127.999" cy="127.999" r="127.999"/>
-        <circle class="cls-5" cx="127.999" cy="127.999" r="123.999"/>
-      </g>
+  <g id="iPhone_6_7_1" data-name="iPhone 6/7 – 1" class="cls-1">
+    <g id="グループ化_72" data-name="グループ化 72" transform="translate(1256 -54)">
+      <text id="DIPTECH" class="cls-2" transform="translate(-9557 -1595.362)"><tspan x="0" y="0">DIPTECH</tspan></text>
+      <image id="logo_3" width="234.565" height="260.367" transform="translate(-9231 -2093.502)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADeCAYAAAB4108YAAAACXBIWXMAAAsSAAALEgHS3X78AAACh0lEQVR42u3dsVECURSG0f86ZBpQBDl0IHRkBwwdUIJWAiVgB5ZgB9fA1BkNWHzMnhMz7J2374MleVSSc8a1SvI4yCzv4Zpeuvsy+pCVpN0r/sGuu8+jD/ngPoFAQCAgEBAICAQEAgIBgYBAAIGAQEAgIBAQCAgEBAICAYGAQACBgEDgqhZJDgPPt0my/MPrlknWE89ymNne2Msjqe77PxarqrZJTlNeo7trVhujauqN4Vws8BsEBAICAQQCAgGBgEBAICAQEAgIBAQCCAQEAgIBgYBAQCAgEBAICAQEAggEBAICAYGAQEAgIBAQCAgEBAIIBAQCAoGbWViC26uqY77/wXfOjlX1KRB+sknyPPM1WN/DkB6xQCAgEBAICAQEAgIBgYBAQCCAQEAgIBAQCAgEBAICAYGAQEAggEBAIHBdjv35H69JzoPPuJ/4/d+SfIx+o6q77363VdU2yWnKa3R3zangqpp6Y+y6e/QPCY9YIBAQCAgEBAICAYGAQEAgIBBAICAQEAgIBAQCAgGBgEBAICAQQCAgEBAICAQEAgIBgYBAQCCAQEAgIBAQCAgEBAICAYGAQEAggEBAICAQEAgIBAQCAgGBgEAAgYBAQCAgEBAICAQEAgIBgYBAAIGAQEAgIBAQCAgEBAICAYEAAgGBgEBAICAQEAgIBAQCAgGBAAIBgYBAQCAgEBAICAQEAgIBBAICAYGAQEAgIBAQCAgEBAICAQQCAgGBgEBAICAQEAgIBAQCAgEEAgIBgcDtLKqqLcPvrJNvEEAgIBAQCAgEBAICAYGAQEAggEBAICAQEAgIBAQCAgGBgEBAIIBAQCAgEJjUIslu4PlWSZ4GmeViu8xvPb8A8ygxEs9tT+0AAAAASUVORK5CYII="/>
     </g>
   </g>
 </svg>

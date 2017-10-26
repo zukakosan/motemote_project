@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-267 -1876 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-アートボード_4);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="結合_1" data-name="結合 1" class="cls-1" d="M267,2256V1994h44v-20a98,98,0,0,1,98-98h59v380Z" transform="translate(-165 -1866)"/>
+    </clipPath>
+    <clipPath id="clip-アートボード_4">
+      <rect x="-267" y="-1876" width="400" height="400"/>
+    </clipPath>
+  </defs>
+  <g id="アートボード_4" data-name="アートボード – 4" class="cls-2">
+    <g id="マスクグループ_12" data-name="マスクグループ 12" class="cls-3" transform="translate(-267 -1876)">
+      <image id="f" width="197" height="380" transform="translate(102 10)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAADkCAYAAABNCdBZAAAACXBIWXMAAAsSAAALEgHS3X78AAADpUlEQVR42u3dX04aURTA4UPDe9lB3YHE4b3soOyg7qAsAXfgDuoS7Aoq70zEHcAKiiugD46RmJj4D5h75vslpDam6ejHuXOH2qG33W5DH68aVcOIGLzjjy7rRb357OPpgX0T3ElEDJvHoPn1657+yvuIWD5/EkTE45Ngs/P5Tb2ol2BfBzlp4MYR8b2gQ19HxArsE+QgIibN40fpX08faHWeBbPzsM10TiPiPCK+Zfwa+x0Fne5x0wP2wKizLoB2BrYaVeOIuMq65HYOtll2ZxHxq4v7iH5S1GFEXHdtSnf7kvTy5bbLqOlgq1F1GRG/Q3mW4mpUXUXET6SJJhZqQlioCWGhJoStRtUU6ssV+c92zatJf/Elgm1eUVpFR17z7dJSfA01GWxzXv2OLdFSXI2qk3j44S3TmmxiZ1CTTaxdcN6JnaFKBttMqw1Twok1rdnOsc1PQtxiyjexU0TJJtZLh3kndgI1L6wyLcXNMvwPT76JNa1gVRLsGE0y2OZFCbvhD9Y3rQdvvvPxqnl0AnaYDPGmeezltj9gD9c6Hv4/7uUhIUuAPS0Y9eLYoK2EbTZOJXYfEePnN9GyK35qADUnbIk74tahtvI6trRzahtRTewHd7/1op619eBM7Pu7avPBgQV7kEq53LmrF/UK7Osr5cX/67YfoKX4fS3B5mwDNmH1or4BK7ACe8zmYAVWYAUWrMAKrMAKrMCCFViBFViBFViwAiuwAiuwAgtWYAVWYPW59c6qs2G05/5KJbzN2V20+91FNvWiXvYj4jK8E9VbOm35E/BPREwsxflaOsfmbAUWrMDqqD3efwpsrtaPH4BNuAyDBSuwOmZLsDnbgDWxKuga1sQm7G73N2ATnl/BJj2/gjWxKqAbsB0IbJ5LHRNrYlVKc7AmVqXuiMEmvYYFm6clWBOrgq5hTWzC7u2KO3J+BZv0/ArWxKrFrcCCFVgd+xoWbMLWL30CbMJlGGxi2H483IzKDbxeX5tu4PUibG+73bbmO1aNqm0BsPN6UY/bfpCW4qSBBSuwAiuwAiuwYAVWYAVWYAUWrMAKrMAKrMCCFViBFViBFViwAiuwAiuwAgtWYAVWYAVWYMEKrMAKrMAKLFiBFViBFViBBSuwAiuwAiuwYAVWYAVWYAUWrMAKrMAKrMCCFViBFViBFViwAiuwAiuwAgtWYAVWYAVWYMEKrMAKrMAKLFiBFViBFViBBSuwAqv91G/Z8VwU8D1blQD7H7u71wyU9Nc9AAAAAElFTkSuQmCC"/>
+    </g>
+  </g>
+</svg>

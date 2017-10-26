@@ -1,9 +1,16 @@
+{% load static %}
 <footer>
-    <ul>
-      <li><a href="#">モテ診断AIとは</a></li>
-      <li><a href="#">ディップについて</a></li>
-      <li><a href="#">採用情報</a></li>
-      <li><a href="#">お問い合わせ</a></li>
-    </ul>
-    <small>Copyright © 2017 AI WANT U All Rights Reserved.</small>
+  <ul>
+    <li><a href="{% url 'calculate_mote:team' %}#member" class="move-member">メンバーを見る</a></li>
+    <li><a href="{% url 'calculate_mote:team' %}#recruit" class="move-recruit">インターン募集について</a></li>
+    <li><a href="https://www.wantedly.com/projects/102664" target="_blank">インターンシップに応募</a></li>
+    <li><a href="{% url 'calculate_mote:system' %}">モテ診断AIのシステム</a></li>
+    <li><a href="{% url 'calculate_mote:index' %}">診断する</a></li>
+    <li><a href="{% url 'calculate_mote:index' %}#about">モテ診断AIとは</a></li>
+    <li><a href="{% url 'calculate_mote:index' %}#how">モテ診断AIの使い方</a></li>
+    <li><a href="http://ainow.ai/" target="_blank">AIに関する記事 - AINOW -</a></li>
+    <li><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">Twitterアカウントの鍵を外す</a></li>
+  </ul>
+  <a href="index.html" id="footer-logo"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+  <small>Copyright © 2017 motemote.ai All Rights Reserved.</small>
 </footer>

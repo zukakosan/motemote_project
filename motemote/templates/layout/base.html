@@ -2,11 +2,11 @@
 <html lang="ja">
     <head>
         {% include 'layout/head.html' %}
-        {% block extrahead %}{% endblock %}
-        <!-- style -->
-        {% block extrastyle %}{% endblock %}
+        <!-- script -->
+        {% block link %}{% endblock %}
+        {% block script %}{% endblock %}
     </head>
-    <body>
+    <body class="drawer drawer--left">
         {% block body %}{% endblock %}
         <!-- script -->
         {% block extrascript %}{% endblock %}
