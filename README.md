@@ -3,9 +3,9 @@
 ## 実行方法
 terminalで`/motemote` に移動して
 ```
-python manage.py runserver
+python manage.py runserver --setting='motemote.settings.development'
 ```
 を実行
 
-### member 
+### member
 `satotatsu matchan zukako nabetaro tamutamu`

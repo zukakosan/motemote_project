@@ -1,0 +1,22 @@
+{% load static %}
+<header>
+  <h1><a href="{% url 'calculate_mote:index' %}"><img src="{% static 'img/logo.png' %}" alt="logo"></a></h1>
+  <button type="button" class="drawer-toggle drawer-hamburger">
+    <span class="sr-only">toggle navigation</span>
+    <span class="drawer-hamburger-icon"></span>
+  </button>
+  <nav id="gnav" class="drawer-nav" role="navigation">
+    <ul class="drawer-menu">
+      <li><a href="{% url 'calculate_mote:team' %}#member" class="move-member">メンバーを見る</a></li>
+      <li><a href="{% url 'calculate_mote:team' %}#recruit" class="move-recruit">インターン募集について</a></li>
+      <li><a href="https://www.wantedly.com/projects/102664" target="_blank">インターンシップに応募</a></li>
+      <li><a href="{% url 'calculate_mote:system' %}">モテ診断AIのシステム</a></li>
+      <li><a href="{% url 'calculate_mote:index' %}">診断する</a></li>
+      <li><a href="{% url 'calculate_mote:index' %}#about">モテ診断AIとは</a></li>
+      <li><a href="{% url 'calculate_mote:index' %}#how">モテ診断AIの使い方</a></li>
+      <li><a href="http://ainow.ai/" target="_blank">AIに関する記事 - AINOW -</a></li>
+      <li><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">Twitterアカウントの鍵を外す</a></li>
+    </ul>
+  </nav>
+  <a href="{% url 'calculate_mote:index' %}#dx01" id="dx-link">診断する</a>
+</header>

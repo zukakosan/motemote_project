@@ -1,0 +1,57 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}">
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/pace.min.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+{% include "layout/header.html" %}
+
+<main>
+  <div id="system">
+    <div id="mainv" class="fadeImg">
+      <ul class="bxslider-fade">
+        <li><img src="{% static 'img/system-mainv/systemImg01.jpg' %}" alt="メインヴィジュアル"></li>
+        <li><img src="{% static 'img/system-mainv/systemImg02.jpg' %}" alt="メインヴィジュアル"></li>
+        <li><img src="{% static 'img/system-mainv/systemImg03.jpg' %}" alt="メインヴィジュアル"></li>
+        <li><img src="{% static 'img/system-mainv/systemImg04.jpg' %}" alt="メインヴィジュアル"></li>
+      </ul>
+      <ul class="bxslider-fade-sp">
+        <li><img src="{% static 'img/system-mainv/systemImg01-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+        <li><img src="{% static 'img/system-mainv/systemImg02-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+        <li><img src="{% static 'img/system-mainv/systemImg03-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+        <li><img src="{% static 'img/system-mainv/systemImg04-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+      </ul>
+    </div>
+    <section id="make" class="fadein">
+      <h2><span>How to make</span>どうやって作ってるの？</h2>
+      <p>モテ診断AIは「自然言語処理AI」という人工知能を使い、異性からどの程度アクション (ファボやリプライなど) されているのかを調べて偏差値を出しています。さらに分析した情報を元にアカウントの傾向を出し、キャラクターを出現させています。</p>
+    </section>
+    <section id="knowmore">
+      <h2><span>Know more</span>もっとシステムを知りたい方</h2>
+      <p>私たちDIPTECHが開発を行っているディップ株式会社では、現在エンジニアインターン生を募集しています。実際にこのサービスの裏側を作っているエンジニアと話して見たい方や、アルゴリズムの詳細などを知りたい方、またはエンジニア以外にも人工知能に興味がある方は是非オフィスまでいらしてください。</p>
+      <button type="submit" class="button work"><a href="https://www.wantedly.com/projects/102664" target="_blank">一緒に働く</a></button>
+    </section>
+    <section id="links">
+      <div class="link_box member">
+        <p>私たちDIPTECHはdip株式会社 次世代事業準備室 インターン生によるチームから
+          生まれたソーシャルリクルーティングサービスです。</p>
+        <a href="{% url 'calculate_mote:team' %}">制作チームを見る</a>
+      </div>
+      <div class="link_box dx">
+        <p>モテ診断AIは個々のツイッターアカウントを解析する事で、異性からどの程度「モテているのか」が偏差値でわかります。</p>
+        <a href="{% url 'calculate_mote:index' %}">診断ページへ</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% include "layout/footer.html" %}
+
+{% endblock %}

@@ -1,112 +1,98 @@
 {% extends "layout/base.html" %}
 {% load static %}
 
+{% block link %}
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/pace-theme-loading-bar.tmpl.css' %}">
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/pace.min.js' %}"></script>
+{% endblock %}
+
 {% block body %}
-<div id="load">
-  <div id="loader-bg">
-    <div id="loader">
-      <img src="{% static 'img/img-loading.gif' %}" width="80" height="80" alt="Now Loading..." />
-      <p>Now Loading...</p>
-    </div>
+<div id="loader-bg">
+  <div id="loader">
+    <p><span>Now Loading</span>診断中</p>
+    診断には1分ほどかかります。そのまましばらくお待ちください。
   </div>
-  <div id="wrap">
+</div>
 
-    {% include "layout/sub_header.html" %}
+<div id="contents" class="drawer drawer--left">
 
-    <main>
-      <div id="sub_contents">
-        <div class="pannav">
-          <ul>
-            <li>
-                <a itemprop="url" href="index" title=""><span itemprop="title">TOP</span></a>&#62;
-            </li>
-            <li><span itemprop="title" class="pnav_here">診断結果</span></li>
-          </ul>
-        </div>
-        <h1><span id='screen_name'>{{ screen_name }}</span>さんのモテ偏差値は...<span id='score'></span></h1>
-        <ul class="illuestbox">
-          <li><img src="" id='img'></li>
-        </ul>
-        <h1><span id='pozi_score' ></span></h1>
-        <div id="links">
-          <a href="http://twitter.com/share?url=[シェアするURL]&text=世界初！モテ診断AI アイウォンチュー でモテ偏差値を計ろう！&via=[screen_name]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
-          <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
-          <a href="how" class="how">どうやって作ってるの？</a>
-        </div>
+  {% include "layout/header.html" %}
+
+  <main>
+    <section id="result">
+      <span id='screen_name' style="display: none;">{{ screen_name }}</span>
+      {% include 'calculate_mote/result_content.html' %}
+    </section>
+    <section id="links">
+      <div class="link_box system">
+        <p>モテ診断AIがどのようなシステムでできているかをざっくりと紹介致します。
+          システムが気になる方は下リンクからおすすみ下さい。</p>
+        <a href="{% url 'calculate_mote:system' %}">どうやって作ってるの？</a>
       </div>
-    </main>
-
-    {% include 'layout/footer.html' %}
-
-  </div>
+      <div class="link_box member">
+        <p>私たちDIPTECHはdip株式会社 次世代事業準備室 インターン生によるチームから
+          生まれたソーシャルリクルーティングサービスです。</p>
+        <a href="{% url 'calculate_mote:team' %}">制作チームを見る</a>
+      </div>
+    </section>
+  </main>
+  {% include 'layout/footer.html' %}
 </div>
 {% endblock %}
 
 {% block extrascript %}
+<script type="text/javascript" src="{% static 'js/ajax-csrf-code.js' %}"></script>
 <script>
-$(function() {
+
+// ロード開始
+function startload(){
   var h = $(window).height();
-
-  $('#wrap').css('display','none');
+  $('#contents').css('display','none');
   $('#loader-bg ,#loader').height(h).css('display','block');
+}
 
-  $(window).on('load', function() {
-      screen_name = $('#screen_name').text();
-
-      $.ajax({
-          type: 'POST',
-          url: '/calculate_mote/call_mote_api',
-          data: JSON.stringify({'screen_name': screen_name}),
-          success: function(response) {
-              $('#score').text(response['result']['score']);
-              $('#pozi_score').text(response['result']['dev_text']);
-              console.log(response['result']['img']);
-              $('#img').attr('src',response['result']['img']);
-              stopload();
-          },
-          error: function(response) {
-              console.log('ajax script failed to update sessions;;');
-          }
-      });
-  });
-
-  // CSRF code
-  function getCookie(name) {
-      var cookieValue = null;
-      var i = 0;
-      if (document.cookie && document.cookie !== '') {
-          var cookies = document.cookie.split(';');
-          for (i; i < cookies.length; i++) {
-              var cookie = jQuery.trim(cookies[i]);
-              // Does this cookie string begin with the name we want?
-              if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                  break;
-              }
-          }
-      }
-      return cookieValue;
-  }
-  var csrftoken = getCookie('csrftoken');
-
-  function csrfSafeMethod(method) {
-      // these HTTP methods do not require CSRF protection
-      return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
-  }
-  $.ajaxSetup({
-      crossDomain: false, // obviates need for sameOrigin test
-      beforeSend: function(xhr, settings) {
-          if (!csrfSafeMethod(settings.type)) {
-              xhr.setRequestHeader("X-CSRFToken", csrftoken);
-          }
-      }
-  });
-});
-
+// ロード終了
 function stopload(){
-  $('#wrap').css('display','block');
+  $('#contents').css('display','block');
   $('#loader-bg').delay(900).fadeOut(800);
   $('#loader').delay(600).fadeOut(300);
 }
+
+// 解析結果を表示する
+function displayAnalysisResult(response){
+  $('.score').text(response['result']['score']);
+  $('#dev_text').text(response['result']['dev_text']);
+  $('#illust_img').attr('src',response['result']['illust_img']);
+  $('#dev_comment').text(response['result']['dev_comment']);
+  stopload();
+}
+
+
+$(function() {
+  $(window).on('load', function() {
+      startload();
+      screen_name = $('#screen_name').text();
+
+      Pace.track(function(){
+        // ajax通信を行う
+        $.ajax({
+            type: 'POST',
+            url: '/calculate_mote/call_mote_api',
+            data: JSON.stringify({'screen_name': screen_name}),
+            success: function(response) {
+                displayAnalysisResult(response);
+            },
+            error: function(response) {
+                console.log('ajax script failed to update sessions;;');
+            }
+        });
+      });
+
+  });
+});
 </script>
 {% endblock %}
