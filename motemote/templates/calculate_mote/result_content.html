@@ -1,0 +1,27 @@
+<div id="illust">
+  <ul>
+    <li><img src="" id="illust_img"></li>
+  </ul>
+  <p class="num"><span class='score'></span></p>
+</div>
+<div id="illust-contents">
+  <div id="illust-name">
+    <ul>
+
+      <li class="" id="dev_text"></li>
+
+    </ul>
+    <h2>モテ偏差値は<span class="num"><span class='score'></span></span></h2>
+  </div>
+  <ul id="illust-txt">
+
+    <li class="normal-txt">君のモテ偏差値は<span class='score'></span>だよ。<span id="dev_comment"></span></li>
+
+  </ul>
+  <div id="button-wrap">
+    <button type="submit" class="button">
+      <a href="http://twitter.com/share?url=[シェアするURL]&text=モテ診断AIでフォロワーからどのくらいモテているのか偏差値がわかったよ！キャラクターもシュールで面白い！&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
+    </button>
+    <button type="submit" class="button"><a href="{% url 'calculate_mote:index' %}">もう一度診断</a></button>
+  </div>
+</div>

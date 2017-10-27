@@ -1,0 +1,112 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}">
+{% endblock %}
+
+
+{% block body %}
+
+{% include "layout/header.html" %}
+
+<main>
+  <div id="mainv">
+    <ul class="bxslider">
+      <li><img src="{% static 'img/team-mainv/teamImg01.jpg' %}" alt="メインヴィジュアル"></li>
+      <li><img src="{% static 'img/team-mainv/teamImg02.jpg' %}" alt="メインヴィジュアル"></li>
+      <li><img src="{% static 'img/team-mainv/teamImg03.jpg' %}" alt="メインヴィジュアル"></li>
+      <li><img src="{% static 'img/team-mainv/teamImg04.jpg' %}" alt="メインヴィジュアル"></li>
+    </ul>
+  </div>
+  <section id="dx01" class="fadein">
+    <p>Twitterアカウント名を入力すると、
+    フォロワーからのモテ偏差値とTwitter上でのキャラが診断されます。
+    早速試してみましょう！<br>
+    <span>※ 鍵付きアカウントは診断できません。解除してご利用ください。</span><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></p>
+
+    <form action="{% url 'calculate_mote:result' %}" method="post" name="formdx" id="top_form">
+      {% csrf_token %}
+      <div class="input-wrap">
+        {{ form }}
+
+      {% if messages %}
+        <ul class="error">
+        {% for message in messages %}
+          {{ message }}
+        {% endfor %}
+        </ul>
+      {% endif %}
+
+      </div>
+      <button type="submit" class="button analytics_button">診断する</button>
+    </form>
+  </section>
+  <section id="about" class="fadein">
+    <h2><span>About</span>モテ診断AIとは</h2>
+    <p>モテ診断AIはDIPTECHがツイッターとコラボし開発した、全く新しい診断系コンテンツです。
+      人工知能を活用し個々のアカウントを解析する事で、異性からどの程度「モテているのか」を
+      偏差値形式で割り出す事を可能にしました。さらにツイッターを利用する上でのアカウントの
+      特徴や傾向によって「ツイッター上の人物像」をキャラクターで表現する事ができます。自分
+      のアカウントはもちろん、フォロワーや芸能人などの診断もお楽しみいただけます。</p>
+  </section>
+  <section id="how">
+    <h2><span>How to use</span>モテ診断AIの使い方</h2>
+    <ul class="fadein">
+      <li>
+        <h3><img src="{% static 'img/step1.png' %}" alt="使い方1"></h3>
+        <h4>Twitterアカウント名を入力</h4>
+        <p>＠から始まるTwitterアカウント名を入力して「診断する」を押して下さい。鍵付きアカウントは診断できませんので、解除してご利用ください。<a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></p>
+      </li>
+      <li>
+        <h3><img src="{% static 'img/step2.png' %}" alt="使い方2"></h3>
+        <h4>人工知能がアカウントを解析</h4>
+        <p>解析には1分ほどかかります。診断中パーセンテージが100パーセントになるまでお待ち下さい。</p>
+      </li>
+      <li>
+        <h3><img src="{% static 'img/step3.png' %}" alt="使い方3"></h3>
+        <h4>Twitter上でのキャラクターとモテ偏差値を診断します</h4>
+        <p>Twitter上でのアカウントの傾向を元にキャラクターを表示します。キャラクターは画像として保存可能です。</p>
+      </li>
+    </ul>
+  </section>
+  <section id="dx02">
+    <p>Twitterアカウント名を入力すると、
+      フォロワーからのモテ偏差値とTwitter上でのキャラが診断されます。
+      早速試してみましょう！<br>
+      <span>※ 鍵付きアカウントは診断できません。解除してご利用ください。</span><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></p>
+
+    <form action="{% url 'calculate_mote:result' %}" method="post" name="formdx">
+      {% csrf_token %}
+      <div class="input-wrap">
+        {{ form }}
+
+      {% if messages %}
+        <ul class="error">
+        {% for message in messages %}
+          {{ message }}
+        {% endfor %}
+        </ul>
+      {% endif %}
+
+      </div>
+      <button type="submit" class="button analytics_button">診断する</button>
+    </form>
+
+  </section>
+  <section id="links">
+    <div class="link_box system">
+      <p>モテ診断AIがどのようなシステムでできているかをざっくりと紹介致します。
+        システムが気になる方は下リンクからおすすみ下さい。</p>
+      <a href="{% url 'calculate_mote:system' %}">どうやって作ってるの？</a>
+    </div>
+    <div class="link_box member">
+      <p>私たちDIPTECHはdip株式会社 次世代事業準備室 インターン生によるチームから
+        生まれたソーシャルリクルーティングサービスです。</p>
+      <a href="{% url 'calculate_mote:team' %}">制作チームを見る</a>
+    </div>
+  </section>
+</main>
+
+{% include 'layout/footer.html' %}
+{% endblock %}

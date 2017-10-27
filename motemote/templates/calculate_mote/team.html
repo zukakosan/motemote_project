@@ -1,0 +1,137 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/pace.min.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+{% include "layout/header.html" %}
+
+<main>
+<div id="mainv" class="fadeImg">
+  <ul class="bxslider-fade">
+    <li><img src="{% static 'img/team-mainv/teamImg01.jpg' %}" alt="メインヴィジュアル"></li>
+    <li><img src="{% static 'img/team-mainv/teamImg02.jpg' %}" alt="メインヴィジュアル"></li>
+    <li><img src="{% static 'img/team-mainv/teamImg03.jpg' %}" alt="メインヴィジュアル"></li>
+    <li><img src="{% static 'img/team-mainv/teamImg04.jpg' %}" alt="メインヴィジュアル"></li>
+  </ul>
+  <ul class="bxslider-fade-sp">
+    <li><img src="{% static 'img/team-mainv/teamImg01-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+    <li><img src="{% static 'img/team-mainv/teamImg02-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+    <li><img src="{% static 'img/team-mainv/teamImg03-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+    <li><img src="{% static 'img/team-mainv/teamImg04-sp.jpg' %}" alt="スマホ版メインヴィジュアル"></li>
+  </ul>
+</div>
+<div id="team">
+  <section id="about-us" class="fadein">
+    <h2><span>About us</span>DIPTECHとは</h2>
+    <p>私たちDIPTECHはdip株式会社 次世代事業準備室 インターン生によるチームから生まれたソーシャルリクルーティングサービスです。</p>
+  </section>
+  <section id="concept" class="fadein">
+    <h2><span>Concept</span>コンセプト</h2>
+    <p>2016年にGoogleのAIphaGoがプロ囲碁棋士を破った事からAIブームが再発しました。現在では多くの企業がAIをビジネスに活用しようと試みています。そんな中、私たちDIPTECHはAIを活用した新しいリクルーティングサービスを企画する中、発足しました。</p>
+  </section>
+  <section id="member">
+    <h2><span>Member</span>制作チームメンバー</h2>
+    <ul class="cf">
+      <li class="fadein">
+        <img src="{% static 'img/member/member01.png' %}" alt="メンバーポートレート">
+        <h3 class="cf"><span>Data Scientist & ガチ忍者(甲賀流)</span>Koki
+          <a class="button-link opensub insta" href="https://www.instagram.com/ko__asp/" target="_blank">
+            <img src="{% static 'img/icon/instagram.svg' %}" alt="Instagramロゴ">
+          </a>
+          <a class="button-link opensub facebook" href="https://www.facebook.com/zukakoo" target="_blank">
+            <img src="{% static 'img/icon/facebook.svg' %}" alt="facebookロゴ">
+          </a>
+          <a class="button-link opensub twitter" href="https://twitter.com/zkk_mentaiko" target="_blank">
+            <img src="{% static 'img/icon/twitter.svg' %}" alt="Twitterロゴ">
+          </a>
+        </h3>
+        <p>モテ偏差値60以上の女性しか愛せないスーパーデータサイエンティスト！彼女になりたい方はTwitterDMにモテ偏差値を記載の上ご連絡下さい(笑)</p>
+      </li>
+      <li class="img-center img-right fadein">
+        <img src="{% static 'img/member/member02.png' %}" alt="メンバーポートレート">
+        <h3><span>Data Scientist & 究極の詐欺師</span>Tatuya
+          <a class="button-link opensub insta" href="https://www.instagram.com/so_satotatsu1205/" target="_blank">
+            <img src="{% static 'img/icon/instagram.svg' %}" alt="Instagramロゴ">
+          </a>
+          <a class="button-link opensub facebook" href="https://www.facebook.com/profile.php?id=100012693941858" target="_blank">
+            <img src="{% static 'img/icon/facebook.svg' %}" alt="facebookロゴ">
+          </a>
+          <a class="button-link opensub twitter" href="https://twitter.com/12satouT" target="_blank">
+            <img src="{% static 'img/icon/twitter.svg' %}" alt="Twitterロゴ">
+          </a>
+        </h3>
+        <p>巧みな話術により騙せない者はいない。<br>
+        <blockquote>"本日のゼミですが、ウイルス性鼻炎のため欠席致します(これはガチ)"</blockquote></p>
+      </li>
+      <li class="fadein">
+        <img src="{% static 'img/member/member03.png' %}" alt="メンバーポートレート">
+        <h3><span>Designer & うさぎ</span>Koichi
+          <a class="button-link opensub insta" href="https://www.instagram.com/kochan.w" target="_blank">
+            <img src="{% static 'img/icon/instagram.svg' %}" alt="Instagramロゴ">
+          </a>
+          <a class="button-link opensub facebook" href="https://www.facebook.com/koichi0808" target="_blank">
+            <img src="{% static 'img/icon/facebook.svg' %}" alt="facebookロゴ">
+          </a>
+          <a class="button-link opensub twitter" href="https://twitter.com/Koichi_index" target="_blank">
+            <img src="{% static 'img/icon/twitter.svg' %}" alt="Twitterロゴ">
+          </a>
+        </h3>
+        <p>うさぎ並の繁殖能力を持って生まれた超人デザイナー！
+        <blockquote>"恋愛ってのはクリエイティブ(創造的)じゃなきゃね"</blockquote></p>
+      </li>
+      <li class="fadein img-right">
+        <img src="{% static 'img/member/member04.png' %}" alt="メンバーポートレート">
+        <h3><span>Engineer & ティンダリスト</span>Taiyo
+          <a class="button-link opensub insta" href="https://www.instagram.com/taiyou_tamura/?hl=ja" target="_blank">
+            <img src="{% static 'img/icon/instagram.svg' %}" alt="Instagramロゴ">
+          </a>
+          <a class="button-link opensub facebook" href="https://www.facebook.com/profile.php?id=100008254031564" target="_blank">
+            <img src="{% static 'img/icon/facebook.svg' %}" alt="facebookロゴ">
+          </a>
+          <a class="button-link opensub twitter" href="https://twitter.com/tm_taiyo" target="_blank">
+            <img src="{% static 'img/icon/twitter.svg' %}" alt="Twitterロゴ">
+          </a>
+        </h3>
+        <p>出会い系アプリで出会った人数は120人！<br>
+        <blockquote>"出会い系アプリは科学だ。人生の価値はマッチングの数である。"</blockquote></p>
+      </li>
+      <li class="img-center fadein">
+        <img src="{% static 'img/member/member05.png' %}" alt="メンバーポートレート">
+        <h3><span>Data Scientist & 消えた天才</span>Daigo</h3>
+        <p>モテ診断AIの核を作り静かに去っていった男。８月某日に突如行方不明となる...。</p>
+      </li>
+    </ul>
+    <p>※メンバーは全員、真面目で優秀な方々です。</p>
+  </section>
+  <section id="recruit">
+    <h2><span>Recruit</span>共に開発できる仲間募集中！</h2>
+    <p>チームメンバーは全員dip株式会社のインターン生です。現在一緒に企画・開発できる仲間を募集中です。AIを作ってみたい、AIに興味があるという方は是非オフィスにいらしてください。応募は「一緒に働く」からできます。</p>
+    <button type="submit" class="button work"><a href="https://www.wantedly.com/projects/102664" target="_blank">一緒に働く</a></button>
+  </section>
+  <section id="links">
+    <div class="link_box system">
+      <p>モテ診断AIがどのようなシステムでできているかをざっくりと紹介致します。
+        システムが気になる方は下リンクからおすすみ下さい。</p>
+      <a href="{% url 'calculate_mote:system' %}">どうやって作ってるの？</a>
+    </div>
+    <div class="link_box dx">
+      <p>モテ診断AIは個々のツイッターアカウントを解析する事で、異性からどの程度「モテているのか」が偏差値でわかります。</p>
+      <a href="{% url 'calculate_mote:index' %}">診断ページへ</a>
+    </div>
+  </section>
+</div>
+</main>
+
+
+{% include "layout/footer.html" %}
+
+{% endblock %}

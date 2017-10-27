@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>モテ診断AI</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/sp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+</head>
+<body class="drawer drawer--left">
+  <header>
+    <h1><a href="team.html"><img src="img/logo.png" alt="logo"></a></h1>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav id="gnav" class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a href="#about" class="move-about">モテ診断AIとは</a></li>
+        <li><a href="#how" class="move-how">モテ診断AIの使い方</a></li>
+        <li><a href="system.html">モテ診断AIのシステム</a></li>
+        <li><a href="team.html">制作チーム - DIPTECH -</a></li>
+        <li><a href="team.html#recruit">インターン募集について</a></li>
+        <li><a href="http://ainow.ai/" target="_blank">AIに関する記事 - AINOW -</a></li>
+        <li><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">Twitterアカウントの鍵を外す</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="mainv">
+      <ul class="bxslider">
+        <li><img src="img/mainv/mainImg01.jpg" alt="メインヴィジュアル"></li>
+        <li><img src="img/mainv/mainImg02.jpg" alt="メインヴィジュアル"></li>
+        <li><img src="img/mainv/mainImg03.jpg" alt="メインヴィジュアル"></li>
+        <li><img src="img/mainv/mainImg04.jpg" alt="メインヴィジュアル"></li>
+      </ul>
+    </div>
+    <section id="dx01" class="fadein">
+      <p>Twitterアカウント名を入力すると、
+      フォロワーからのモテ偏差値とTwitter上でのキャラが診断されます。
+      早速試してみましょう！<br>
+      <span>※ 鍵付きアカウントは診断できません。解除してご利用ください。</span><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></p>
+
+      <form action="result.html" method="post" name="formdx">
+        <div class="input-wrap">
+          <input type="text" name="screen_name" placeholder="＠UserName" class="tw_name" onkeydown="go();">
+          <!-- エラーテキスト -->
+          <ul class="error">
+
+            <!-- 空欄で入力された場合 -->
+            <!-- <li class="error01">Twitterアカウント名を入力して下さい。</li> -->
+
+            <!-- ひらがなやカタカナなどTwitterで使用できない文字が入力された場合 -->
+            <!-- <li class="error02">有効なアカウント名を入力して下さい。</li> -->
+
+            <!-- 存在しないアカウント名が入力された場合 -->
+            <!-- <li class="error03">このアカウントは存在しません。</li> -->
+
+            <!-- 鍵アカのアカウント名が入力された場合 -->
+            <!-- <li class="error04">このアカウントは鍵がかかっています。鍵を外してご利用下さい。<a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></li> -->
+
+            <!-- ３回間違えた場合(笑) -->
+            <!--<li class="error-x">おい！ちゃんと入力しろよ！</li>-->
+
+          </ul>
+        </div>
+        <button type="submit" class="button"><a href="result.html">診断する</a></button>
+      </form>
+    </section>
+    <section id="about" class="fadein">
+      <h2><span>About</span>モテ診断AIとは</h2>
+      <p>モテ診断AIはDIPTECHがツイッターとコラボし開発した、全く新しい診断系コンテンツです。
+        人工知能を活用し個々のアカウントを解析する事で、異性からどの程度「モテているのか」を
+        偏差値形式で割り出す事を可能にしました。さらにツイッターを利用する上でのアカウントの
+        特徴や傾向によって「ツイッター上の人物像」をキャラクターで表現する事ができます。自分
+        のアカウントはもちろん、フォロワーや芸能人などの診断もお楽しみいただけます。</p>
+    </section>
+    <section id="how">
+      <h2><span>How to use</span>モテ診断AIの使い方</h2>
+      <ul class="fadein">
+        <li>
+          <h3><img src="img/step1.png" alt="使い方1"></h3>
+          <h4>Twitterアカウント名を入力</h4>
+          <p>＠から始まるTwitterアカウント名を入力して「診断する」を押して下さい。鍵付きアカウントは診断できませんので、解除してご利用ください。<a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></p>
+        </li>
+        <li>
+          <h3><img src="img/step2.png" alt="使い方2"></h3>
+          <h4>人工知能がアカウントを解析</h4>
+          <p>解析には1分ほどかかります。診断中パーセンテージが100パーセントになるまでお待ち下さい。</p>
+        </li>
+        <li>
+          <h3><img src="img/step3.png" alt="使い方3"></h3>
+          <h4>Twitter上でのキャラクターとモテ偏差値を診断します</h4>
+          <p>Twitter上でのアカウントの傾向を元にキャラクターを表示します。キャラクターは画像として保存可能です。</p>
+        </li>
+      </ul>
+    </section>
+    <section id="dx02">
+      <p>Twitterアカウント名を入力すると、
+        フォロワーからのモテ偏差値とTwitter上でのキャラが診断されます。
+        早速試してみましょう！<br>
+        <span>※ 鍵付きアカウントは診断できません。解除してご利用ください。</span><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></p>
+      <form action="result.html" method="post" name="formdx">
+        <div class="input-wrap">
+          <input type="text" name="screen_name" placeholder="＠UserName" class="tw_name" onkeydown="go();">
+          <!-- エラーテキスト -->
+          <ul class="error">
+
+            <!-- 空欄で入力された場合 -->
+            <!-- <li class="error01">Twitterアカウント名を入力して下さい。</li> -->
+
+            <!-- ひらがなやカタカナなどTwitterで使用できない文字が入力された場合 -->
+            <!-- <li class="error02">有効なアカウント名を入力して下さい。</li> -->
+
+            <!-- 存在しないアカウント名が入力された場合 -->
+            <!-- <li class="error03">このアカウントは存在しません。</li> -->
+
+            <!-- 鍵アカのアカウント名が入力された場合 -->
+            <!-- <li class="error04">このアカウントは鍵がかかっています。鍵を外してご利用下さい。<a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">鍵を外す</a></li> -->
+
+            <!-- ３回間違えた場合(笑) -->
+            <!--<li class="error-x">３回間違えたよ？ちゃんと入力してね♡</li>-->
+
+          </ul>
+        </div>
+        <button type="submit" class="button"><a href="result.html">診断する</a></button>
+      </form>
+    </section>
+    <section id="links">
+      <div class="link_box system">
+        <p>モテ診断AIがどのようなシステムでできているかをざっくりと紹介致します。
+          システムが気になる方は下リンクからおすすみ下さい。</p>
+        <a href="system.html">どうやって作ってるの？</a>
+      </div>
+      <div class="link_box member">
+        <p>私たちDIPTECHはdip株式会社 次世代事業準備室 インターン生によるチームから
+          生まれたソーシャルリクルーティングサービスです。</p>
+        <a href="team.html">制作チームを見る</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#about" class="move-about">モテ診断AIとは</a></li>
+      <li><a href="#how" class="move-how">モテ診断AIの使い方</a></li>
+      <li><a href="system.html">モテ診断AIのシステム</a></li>
+      <li><a href="team.html">制作チーム - DIPTECH -</a></li>
+      <li><a href="team.html#recruit">インターン募集について</a></li>
+      <li><a href="http://ainow.ai/" target="_blank">AIに関する記事 - AINOW -</a></li>
+      <li><a href="https://mobile.twitter.com/settings/safety" target="_blank" class="key-open">Twitterアカウントの鍵を外す</a></li>
+    </ul>
+    <a href="team.html" id="footer-logo"><img src="img/logo.png" alt="logo"></a>
+    <small>Copyright © 2017 motemote.ai All Rights Reserved.</small>
+  </footer>
+</body>
+</html>

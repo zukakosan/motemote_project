@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200,  user-scalable=yes, target-densitydpi=device-dpi">
+  <meta name="keywords" content="モテ診断AI,モテ診断,AI,Twitter,ツイッター,診断">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>モテモテ！診断</title>
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="css/drawer.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/sp.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="js/iscroll.js"></script>
+  <script src="js/drawer.min.js"></script>
+  <script src="js/common.js"></script>
+
+</head>
+<body>
+  <div id="load">
+    <div id="loader-bg">
+      <div id="loader">
+        <img src="img/img-loading.gif" width="80" height="80" alt="Now Loading..." />
+        <p>Now Loading...</p>
+        <!--<div id="rank">
+          <ul>
+            <li class="cf">
+              <img src="img/rank01.svg" alt="">
+              <p class="name">サンプル太郎</p>
+              <p>結果は… 偏差値 <span>25</span>でした</p>
+            </li>
+            <li class="cf">
+              <img src="img/rank02.svg" alt="">
+              <p class="name">サンプル二郎</p>
+              <p>結果は… 偏差値 <span>22</span>でした</p>
+            </li>
+            <li class="cf">
+              <img src="img/rank03.svg" alt="">
+              <p class="name">サンプル三郎</p>
+              <p>結果は… 偏差値 <span>21</span>でした</p>
+            </li>
+          </ul>
+        </div>-->
+      </div>
+    </div>
+    <div id="wrap">
+      <header id="sub_header">
+        <div id="header_box" class="header_box drawer drawer--left">
+          <h1><a href="#"><img src="img/logo_sub.svg" alt=""></a></h1>
+
+          <nav class="drawer-nav">
+            <ul class="drawer-menu">
+              <li><a href="#">モテ診断AIとは</a></li>
+              <li><a href="#">ディップについて</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div id="sub_contents">
+          <div class="pannav">
+            <ul>
+              <li>
+                  <a itemprop="url" href="index.html" title=""><span itemprop="title">TOP</span></a>&#62;
+              </li>
+              <li><span itemprop="title" class="pnav_here">診断結果</span></li>
+            </ul>
+          </div>
+          <!--
+          <section id="character">
+            <div id="character_top">
+              <h2>
+                <p>あなたのTwitterでの人物像</p>
+                <p class="people">ひきこもりオタク</p>
+              </h2>
+              <img src="img/chara01.svg" alt="">
+              <div id="Deviation">
+                偏差値<span id="Deviation_num">25</span>
+              </div>
+            </div>
+            <p id="character_content">あなたのモテ偏差値は25です。全くモテていませんね。現実の人物像がどうであれ、あなたはTwitter上ではひきこもりオタクです。以下の解析結果から改善をしていきましょう。</p>
+          </section>
+          <section>
+            <canvas id="canvas" width="300px" height="300px"></canvas>
+            <ul class="type_list">
+              <li class="otaku">
+                <h2>オタク度</h2>
+                <p>あなたはどうでもいいツイートが多すぎる上に更新率が高すぎます。周りはそれほどあなたのツイートに関心がありません。ツイートは少し控えめにしましょう。</p>
+              </li>
+              <li class="sukebe">
+                <h2>スケベ度</h2>
+                <p>あなたはまっすぐなスケベとは違い、タチが悪いむっつりスケベです。周りからキモがられる可能性があります。</p>
+              </li>
+              <li class="menhera">
+                <h2>メンヘラ度</h2>
+                <p>あなたは病んでいるツイートが多すぎます。これはいわゆるメンヘラです。周りはあなたの病みツイートなんてどうでもいいと思っているでしょう。</p>
+              </li>
+              <li class="owakon">
+                <h2>オワコン度</h2>
+                <p>あなたはギリギリ、オワコンです。ですが希望を持ちましょう。そんなあなたでもモテる可能性はゼロではありません。</p>
+              </li>
+              <li class="narushi">
+                <h2>ナルシ度</h2>
+                <p>あなたは自分にあまり自信のない控えめなタイプです。異性にもっとアタックしても良いでしょう。</p>
+              </li>
+            </ul>
+          </section>
+          -->
+          <h1>あなたのモテ偏差値は...<span>50</span></h1>
+          <div id="links">
+            <a href="http://twitter.com/share?url=[シェアするURL]&text=世界初！モテ診断AI アイウォンチュー でモテ偏差値を計ろう！&via=[ツイート内に含むユーザ名]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
+            <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
+            <a href="how.html" class="how">どうやって作ってるの？</a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">モテ診断AIとは</a></li>
+          <li><a href="#">ディップについて</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <small>Copyright © 2017 AI WANT U All Rights Reserved.</small>
+      </footer>
+    </div>
+  </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(function() {
+  var h = $(window).height();
+
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+
+function stopload(){
+  $('#wrap').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>
+</html>
