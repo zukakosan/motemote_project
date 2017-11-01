@@ -48,9 +48,13 @@ def __is_vaild_screen_name(screen_name):
     return True
 
 def __is_protected_user(screen_name):
-    params = {"screen_name": screen_name}
-    req = twitter_api.get_instance("users/show.json", params=params)
-    protected = req.json().get('protected', False)
+    params = {"q": screen_name, 'page':1, 'count':10}
+    req = twitter_api.get_instance("users/search.json", params=params)
+
+    protected = False
+    for f in req.json():
+        if f['screen_name']  == screen_name:
+            protected = f.get('protected', False)
     return protected
 
 
