@@ -28,6 +28,8 @@ def __is_exist_user(screen_name):
     params = {"screen_name": screen_name}
     req = twitter_api.get_instance("users/show.json", params=params)
 
+    if '@' in screen_name:
+        screen_name = screen_name[1::]
     if req.status_code != 200:
         return False
     else:
@@ -40,6 +42,8 @@ def __is_vaild_screen_name(screen_name):
     - 15文字以内か否か
     - アルファベットと数字とアンダーバーで構成されているか
     """
+    if '@' in screen_name:
+        screen_name = screen_name[1::]
     if len(screen_name) > 15:
         return False
     elif not re.match(r'^([a-zA-Z0-9_]+)$', screen_name):
