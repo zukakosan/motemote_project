@@ -13,10 +13,11 @@
 <main>
   <div id="mainv">
     <ul class="bxslider">
+      <li><img src="{% static 'img/mainv/mainImg_top.jpg' %}" alt="メインヴィジュアル"></li>
+      <li><img src="{% static 'img/mainv/mainImg02.jpg' %}" alt="メインヴィジュアル"></li>
       <li><img src="{% static 'img/team-mainv/teamImg01.jpg' %}" alt="メインヴィジュアル"></li>
-      <li><img src="{% static 'img/team-mainv/teamImg02.jpg' %}" alt="メインヴィジュアル"></li>
-      <li><img src="{% static 'img/team-mainv/teamImg03.jpg' %}" alt="メインヴィジュアル"></li>
-      <li><img src="{% static 'img/team-mainv/teamImg04.jpg' %}" alt="メインヴィジュアル"></li>
+      <!-- <li><img src="{% static 'img/team-mainv/teamImg02.jpg' %}" alt="メインヴィジュアル"></li> -->
+      <!-- <li><img src="{% static 'img/team-mainv/teamImg04.jpg' %}" alt="メインヴィジュアル"></li> -->
     </ul>
   </div>
   <section id="dx01" class="fadein">
@@ -39,9 +40,12 @@
       {% endif %}
 
       </div>
-      <button type="submit" class="button analytics_button">診断する</button>
+      <button type="submit" class="button analytics_button"onclick="ga('send', 'event', 'shinndann', 'push', 'label', value, {'nonInteraction': 1});">診断する</button>
     </form>
+
   </section>
+  <a href="#" onload="ga('send','event','クリック','PC右カラムバナークリック','毎日ニュース確認_クリック',1);">アンカーテキスト</a>
+
   <section id="about" class="fadein">
     <h2><span>About</span>モテ診断AIとは</h2>
     <p>モテ診断AIはDIPTECHがツイッターとコラボし開発した、全く新しい診断系コンテンツです。

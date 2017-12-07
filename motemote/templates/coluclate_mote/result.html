@@ -26,8 +26,21 @@
         <h1><span id='screen_name'>{{ screen_name }}</span>さんのモテ偏差値は...<span id='score'></span></h1>
         <ul class="illuestbox">
           <li><img src="" id='img'></li>
+        <!-- <li><img src="{% static 'img/men_illust02.png' %}" alt=""></li>
+        <li><img src="{% static 'img/men_illust03.png' %}" alt=""></li>
+        <li><img src="{% static 'img/men_illust04.png' %}" alt=""></li>
+        <li><img src="{% static 'img/men_illust04.png' %}" alt=""></li>
+        <li><img src="{% static 'img/men_illust05.png' %}" alt=""></li>
+        <li><img src="{% static 'img/men_illust06.png' %}" alt=""></li>
+        <li><img src="{% static 'img/wmen_illust01.png' %}" alt=""></li>
+        <li><img src="{% static 'img/wmen_illust02.png' %}" alt=""></li>
+        <li><img src="{% static 'img/wmen_illust03.png' %}" alt=""></li>
+        <li><img src="{% static 'img/wmen_illust04.png' %}" alt=""></li>
+        <li><img src="{% static 'img/wmen_illust05.png' %}" alt=""></li>
+        <li><img src="{% static 'img/wmen_illust06.png' %}" alt=""></li> -->
+
         </ul>
-        <h1><span id='pozi_score' ></span></h1>
+        <h1><span id='pozi_score'>おはよう</span></h1>
         <div id="links">
           <a href="http://twitter.com/share?url=[シェアするURL]&text=世界初！モテ診断AI アイウォンチュー でモテ偏差値を計ろう！&via=[screen_name]&related=[ツイート後に表示されるユーザー]&hashtags=[ハッシュタグ]" target="_blank" class="tweet">ツイート</a>
           <!--<button type="submit" class="diagnosis"><a href="road.html">応援する</a></button>-->
@@ -60,7 +73,6 @@ $(function() {
           success: function(response) {
               $('#score').text(response['result']['score']);
               $('#pozi_score').text(response['result']['dev_text']);
-              console.log(response['result']['img']);
               $('#img').attr('src',response['result']['img']);
               stopload();
           },
